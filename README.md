@@ -1,22 +1,24 @@
-## Hello GitHub Fans 👋
+## Hey Guys 👋
 [![Mail Badge](https://img.shields.io/badge/-cole0504cole@gmail.com-c14438?style=flat&logo=Gmail&logoColor=white&link=mailto:cole0504cole@gmail.com)](mailto:cole0504cole@gmail.com)
 ---
 <img align="right" alt="GIF" src="https://raw.githubusercontent.com/JoeyBling/JoeyBling/master/pic/pusheencode.gif" />
 
-### I'm Siwei Zhou
+### I'm Ryan Fong
 
-- A Computer Engineering Undergraduate Student. & Open Source enthusiast.
+- A Electronic Information Engineering Undergraduate Student. & Web Front End Development Learner.
 - 🌱 Currently working in Guangzhou, China.
-- 💬 Ask me about Java, TypeScript and my projects on [2434387555@qq.com](mailto:2434387555@qq.com)
-- ⭐ You may like [webkettle](https://github.com/JoeyBling/webkettle) 、[hexo-theme-yilia-plus](https://github.com/JoeyBling/hexo-theme-yilia-plus) 、or [bootplus](https://github.com/JoeyBling/bootplus)
-- ⚡ Fun fact: Data Analysis📊
+- 💬 Ask me about Javascript, TypeScript and my projects on [1875161218@qq.com](mailto:1875161218@qq.com)
+- ⚡ Fun fact: Web Front End Development
 
 ### 🛠 技术栈 | Tech Stack
 
 - 💻 &#160; ![Node.js](https://img.shields.io/badge/-Node.js-333333?style=flat&logo=node.js)
-![聚合支付](https://img.shields.io/badge/-聚合支付-333333?style=flat&logo=payoneer&logoColor=FF4800)
-- 🌐 &#160; ![HTML5](https://img.shields.io/badge/-HTML5-333333?style=flat&logo=HTML5)
-![React](https://img.shields.io/badge/-React-333333?style=flat&logo=React)
+![Nest.js](https://img.shields.io/badge/-Nest.js-333333?style=flat&logo=nestjs)
+![Electron](https://img.shields.io/badge/-Electron-333333?style=flat&logo=electron&logoColor=FF4800)
+- 🌐 &#160; ![Typescript](https://img.shields.io/badge/-Typescript-333333?style=flat&logo=Typescript)
+![React](https://img.shields.io/badge/-React-333333?style=flat&logo=react)
+![Tailwind CSS](https://img.shields.io/badge/-Tailwind CSS-333333?style=flat&logo=tailwindcss)
+![Google Chrome Extension](https://img.shields.io/badge/-Google Chrome Extension-333333?style=flat&logo=googlechrome)
 - 🛢 &#160; ![MySQL](https://img.shields.io/badge/-MySQL-333333?style=flat&logo=mysql)
 ![MongoDB](https://img.shields.io/badge/-MongoDB-333333?style=flat&logo=mongodb)
 - 🔧 &#160;![Git](https://img.shields.io/badge/-Git-333333?style=flat&logo=git)
