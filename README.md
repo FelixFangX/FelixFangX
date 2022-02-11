@@ -5,7 +5,7 @@
 
 ### I'm Ryan Fong
 
-- ⚡ A Electronic Information Engineering Undergraduate Student.
+- ⚡ An Electronic Information Engineering Undergraduate Student.
 - 🌐 Web Front End Development Noob Learner.
 - 🌱 Currently fieldwork in Guangzhou, China.
 - 💬 Ask me about tech and my projects on [1875161218@qq.com](mailto:1875161218@qq.com)
