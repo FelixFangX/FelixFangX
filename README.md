@@ -13,12 +13,11 @@
 ### 🛠 技术栈 | Tech Stack
 
 - 💻 &#160; ![Node.js](https://img.shields.io/badge/-Node.js-333333?style=flat&logo=node.js)
-![Nest.js](https://img.shields.io/badge/-Nest.js-333333?style=flat&logo=nestjs)
-![Electron](https://img.shields.io/badge/-Electron-333333?style=flat&logo=electron&logoColor=FF4800)
+![Nest.js](https://img.shields.io/badge/-Nest.js-333333?style=flat&logo=nestjs&logoColor=E0234E)
+![Electron](https://img.shields.io/badge/-Electron-333333?style=flat&logo=electron&logoColor=9EE9F8)
 - 🌐 &#160; ![Typescript](https://img.shields.io/badge/-Typescript-333333?style=flat&logo=Typescript)
 ![React](https://img.shields.io/badge/-React-333333?style=flat&logo=react)
-![Tailwind CSS](https://img.shields.io/badge/-Tailwind CSS-333333?style=flat&logo=tailwindcss)
-![Google Chrome Extension](https://img.shields.io/badge/-Google Chrome Extension-333333?style=flat&logo=googlechrome)
+![Tailwind CSS](https://img.shields.io/badge/-tailwindcss-333333?style=flat&logo=tailwindcss)
 - 🛢 &#160; ![MySQL](https://img.shields.io/badge/-MySQL-333333?style=flat&logo=mysql)
 ![MongoDB](https://img.shields.io/badge/-MongoDB-333333?style=flat&logo=mongodb)
 - 🔧 &#160;![Git](https://img.shields.io/badge/-Git-333333?style=flat&logo=git)
