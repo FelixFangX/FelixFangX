@@ -26,6 +26,7 @@
 ![Markdown](https://img.shields.io/badge/-Markdown-333333?style=flat&logo=markdown)
 
 ### 📁 Project
+- [💻 基于Electron React Typescript开发的桌面端简历平台应用程序](https://github.com/Leon0827/Electron-ResumeMook)
 - [🎹 基于Vue2.x开发的简易玩具音乐播放器](https://github.com/Leon0827/ColdIce-Music-Player-By-Vue-2.x)
 - [📰 原生Javascript以及Webpack构建的新闻头条项目(EJS渲染)](https://github.com/Leon0827/Javascript-ES6-Webpack-Kankan-News)
 - [🚀 CSS 预加载火箭动效Demo](https://github.com/Leon0827/CSS-Rocket-PreLoading)
