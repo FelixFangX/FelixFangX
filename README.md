@@ -1,7 +1,7 @@
 ## 👋 Hey Guys 
 [![Mail Badge](https://img.shields.io/badge/-cole0504cole@gmail.com-c14438?style=flat&logo=Gmail&logoColor=white&link=mailto:cole0504cole@gmail.com)](mailto:cole0504cole@gmail.com)
 ---
-<img align="right" alt="GIF" src="https://raw.githubusercontent.com/JoeyBling/JoeyBling/master/pic/pusheencode.gif" />
+<img align="right" alt="GIF" src="https://c.tenor.com/Dq8nm__4of0AAAAC/gimme-code-gimme.gif" />
 
 ### I'm Ryan Fong
 
