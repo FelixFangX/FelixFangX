@@ -5,11 +5,10 @@
 
 ### I'm Ryan Fong
 
-- ⚡ An Electronic Information Engineering Undergraduate Student.
 - 🌐 Web Front End Development Noob Learner.
-- 🌱 Currently fieldwork in Guangzhou, China.
-- 💬 Ask me about tech and my projects on [cole0504cole@gmail.com](mailto:cole0504cole@gmail.com)
-- 🚀 Fun fact: Web Front End Development
+- 🌱 Currently fieldwork in ShenZhen, China.
+- 💬 Ask me about tech or my projects on [cole0504cole@gmail.com](mailto:cole0504cole@gmail.com)
+- 🚀 Fun fact: Web Front End Development For Example.
 
 ### 🛠 Tech Stack
 
@@ -32,10 +31,7 @@
 - [🚀 CSS 预加载火箭动效Demo](https://github.com/Leon0827/CSS-Rocket-PreLoading)
 
 ### ⌨ About Me
-- [技术笔记](https://www.yuque.com/miumiu-9zilm/kb)
+- [语雀]([https://www.yuque.com/miumiu-9zilm/kb](https://www.yuque.com/miumiu-9zilm/curiosity))
 - [Github](https://github.com/Leon0827)
-- [掘金](https://juejin.cn/user/1170302947568557)
 
 ### 💪 Be Acitve!
-
-⭐️ From [RyanFong](http://noobcode.xyz/)
