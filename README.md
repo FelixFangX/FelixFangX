@@ -29,7 +29,7 @@
 - [📰 原生Javascript以及Webpack构建的新闻头条项目(EJS渲染)](https://github.com/Leon0827/Javascript-ES6-Webpack-Kankan-News)
 
 ### ⌨ About Me
-- [语雀]([https://www.yuque.com/miumiu-9zilm/curiosity](https://www.yuque.com/miumiu-9zilm/curiosity))
+- [语雀](https://www.yuque.com/miumiu-9zilm/curiosity)
 - [Github](https://github.com/Leon0827)
 
 ### 💪 Be Acitve!
