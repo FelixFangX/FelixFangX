@@ -5,7 +5,7 @@
 
 ### I'm Ryan Fong
 
-- 🌐 Web Front End Development Noob Learner.
+- 🌐 Web Front End Developer.
 - 🌱 Currently fieldwork in ShenZhen, China.
 - 💬 Ask me about tech or my projects on [cole0504cole@gmail.com](mailto:cole0504cole@gmail.com)
 - 🚀 Fun fact: Web Front End Development For Example.
