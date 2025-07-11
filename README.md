@@ -8,7 +8,7 @@
 - 🌐 Web Front End Developer.
 - 🌱 Currently fieldwork in ShenZhen, China.
 - 💬 Ask me about tech or my projects on [cole0504cole@gmail.com](mailto:cole0504cole@gmail.com)
-- 🚀 Fun fact: Web Front End Development For Example.
+- 🚀 Fun fact: None.
 
 ### 🛠 Tech Stack
 
@@ -18,16 +18,9 @@
 - 🌐 &#160; ![Typescript](https://img.shields.io/badge/-Typescript-333333?style=flat&logo=Typescript)
 ![React](https://img.shields.io/badge/-React-333333?style=flat&logo=react)
 ![Tailwind CSS](https://img.shields.io/badge/-tailwindcss-333333?style=flat&logo=tailwindcss)
-- 🛢 &#160; ![MySQL](https://img.shields.io/badge/-MySQL-333333?style=flat&logo=mysql)
-![MongoDB](https://img.shields.io/badge/-MongoDB-333333?style=flat&logo=mongodb)
-- 🔧 &#160;![Git](https://img.shields.io/badge/-Git-333333?style=flat&logo=git)
 
 ### 📁 Project
-- [💻 基于Electron React Typescript开发的桌面端简历平台应用程序](https://github.com/Leon0827/Electron-ResumeMook)
-- [📰 原生Javascript以及Webpack构建的新闻头条项目(EJS渲染)](https://github.com/Leon0827/Javascript-ES6-Webpack-Kankan-News)
 
 ### ⌨ About Me
-- [语雀](https://www.yuque.com/miumiu-9zilm)
-- [Github](https://github.com/Leon0827)
 
 ### 💪 Be Acitve!
