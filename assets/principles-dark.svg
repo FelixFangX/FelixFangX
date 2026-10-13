@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="190" viewBox="0 0 1200 190" role="img" aria-labelledby="t d" font-family="ui-sans-serif,-apple-system,'Segoe UI',Inter,Helvetica,Arial,sans-serif">
+<title id="t">Operating principles</title>
+<desc id="d">01 Spec before code: Problem, user stories, out-of-scope. Then thin vertical slices. 02 No flattery: Say what’s wrong. Praise is not a deliverable. 03 Verify, then answer: A failing test or a source beats confidence. 04 Memory you own: Portable, private, correctable. Not tied to any model.</desc>
+<style>@media (prefers-reduced-motion: reduce){*{animation:none!important}}</style>
+<rect class="bg" width="1200" height="190" fill="#0b0f17"/>
+<g transform="translate(0 10)"><rect x="0" y="0" width="284" height="170" rx="14" fill="#111827" stroke="#273142"/>
+<text x="24" y="40" fill="#a78bfa" font-size="13" font-family="ui-monospace,SFMono-Regular,'JetBrains Mono',Menlo,Consolas,monospace" font-weight="700">01</text>
+<text x="24" y="74" fill="#e6edf3" font-size="20" font-weight="700">Spec before code</text>
+<text x="24" y="108" fill="#8b949e" font-size="14">Problem, user stories,</text><text x="24" y="130" fill="#8b949e" font-size="14">out-of-scope. Then thin vertical</text><text x="24" y="152" fill="#8b949e" font-size="14">slices.</text></g>
+<g transform="translate(300 10)"><rect x="0" y="0" width="284" height="170" rx="14" fill="#111827" stroke="#273142"/>
+<text x="24" y="40" fill="#a78bfa" font-size="13" font-family="ui-monospace,SFMono-Regular,'JetBrains Mono',Menlo,Consolas,monospace" font-weight="700">02</text>
+<text x="24" y="74" fill="#e6edf3" font-size="20" font-weight="700">No flattery</text>
+<text x="24" y="108" fill="#8b949e" font-size="14">Say what’s wrong. Praise is not a</text><text x="24" y="130" fill="#8b949e" font-size="14">deliverable.</text></g>
+<g transform="translate(600 10)"><rect x="0" y="0" width="284" height="170" rx="14" fill="#111827" stroke="#273142"/>
+<text x="24" y="40" fill="#a78bfa" font-size="13" font-family="ui-monospace,SFMono-Regular,'JetBrains Mono',Menlo,Consolas,monospace" font-weight="700">03</text>
+<text x="24" y="74" fill="#e6edf3" font-size="20" font-weight="700">Verify, then answer</text>
+<text x="24" y="108" fill="#8b949e" font-size="14">A failing test or a source beats</text><text x="24" y="130" fill="#8b949e" font-size="14">confidence.</text></g>
+<g transform="translate(900 10)"><rect x="0" y="0" width="300" height="170" rx="14" fill="#111827" stroke="#273142"/>
+<text x="24" y="40" fill="#a78bfa" font-size="13" font-family="ui-monospace,SFMono-Regular,'JetBrains Mono',Menlo,Consolas,monospace" font-weight="700">04</text>
+<text x="24" y="74" fill="#e6edf3" font-size="20" font-weight="700">Memory you own</text>
+<text x="24" y="108" fill="#8b949e" font-size="14">Portable, private, correctable.</text><text x="24" y="130" fill="#8b949e" font-size="14">Not tied to any model.</text></g>
+</svg>

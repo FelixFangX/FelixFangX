@@ -1,0 +1,5 @@
+{
+  "user": "FelixFangX",
+  "motifs": { "cat": true, "brew": true },
+  "becomeHuman": { "stage": 0, "_note": "Placeholder plan status. 0=Spec 1=Slices 2=Tests 3=Release. Set by hand." }
+}

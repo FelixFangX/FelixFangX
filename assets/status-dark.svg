@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="130" viewBox="0 0 1200 130" role="img" aria-labelledby="t d" font-family="ui-sans-serif,-apple-system,'Segoe UI',Inter,Helvetica,Arial,sans-serif">
+<title id="t">Become Human — plan status: Spec</title>
+<desc id="d">Progress through Spec, Slices, Tests, Release. Current stage: Spec. This is a manually set plan status, not a metric.</desc>
+<style>.pour{animation:pour 2.4s ease-out forwards;transform-origin:left;transform-box:fill-box;transform:scaleX(0)}@keyframes pour{to{transform:scaleX(1)}}@media (prefers-reduced-motion: reduce){*{animation:none!important}}</style>
+<defs><linearGradient id="crema" x1="0" x2="1"><stop offset="0" stop-color="#3b2416"/><stop offset=".6" stop-color="#8a5a35"/><stop offset="1" stop-color="#d9a066"/></linearGradient></defs>
+<rect class="bg" width="1200" height="130" fill="#0b0f17"/>
+<text x="50" y="30" fill="#e6edf3" font-size="16" font-weight="700">Become Human</text>
+<text x="1150" y="30" text-anchor="end" fill="#8b949e" font-size="12" font-family="ui-monospace,SFMono-Regular,'JetBrains Mono',Menlo,Consolas,monospace">plan status · set by hand · ☕ extraction</text>
+<rect x="50" y="50" width="1100" height="18" rx="9" fill="#111827" stroke="#273142"/>
+<rect class="pour" x="50" y="50" width="137.5" height="18" rx="9" fill="url(#crema)"/>
+<g data-current="true"><circle cx="187.5" cy="59" r="7" fill="#e6edf3" stroke="#a78bfa" stroke-width="3"/><text x="187.5" y="100" text-anchor="middle" fill="#e6edf3" font-size="14" font-weight="700">Spec</text></g><g ><circle cx="462.5" cy="59" r="4" fill="#8b949e" /><text x="462.5" y="100" text-anchor="middle" fill="#8b949e" font-size="14" font-weight="400">Slices</text></g><g ><circle cx="737.5" cy="59" r="4" fill="#8b949e" /><text x="737.5" y="100" text-anchor="middle" fill="#8b949e" font-size="14" font-weight="400">Tests</text></g><g ><circle cx="1012.5" cy="59" r="4" fill="#8b949e" /><text x="1012.5" y="100" text-anchor="middle" fill="#8b949e" font-size="14" font-weight="400">Release</text></g>
+</svg>
