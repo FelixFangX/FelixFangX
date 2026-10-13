@@ -1,0 +1,20 @@
+name: control-room
+on:
+  schedule: [{ cron: "5 16 * * *" }]   # just after midnight UTC+8: new scene each day
+  workflow_dispatch:
+permissions: { contents: write }
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22 }
+      - run: node --test tests/
+      - run: node src/build.mjs
+        env: { GH_TOKEN: "${{ secrets.GITHUB_TOKEN }}" }
+      - run: |
+          git diff --quiet && exit 0
+          git config user.name "control-room[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -am "chore(profile): daily scene + agent log" && git push

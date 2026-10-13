@@ -1,113 +1,72 @@
-<div align="center">                                                                                                                                                      
-                                                            
-  # FelixFang                                                                                                                                                         
-                                                                                                                                                                            
-  ### Frontend Engineer × AI Application Engineer                                                                                                                           
-                                                            
-  **Building interfaces, workflows, and AI-native systems.**
+<!-- Agent Control Room v3. Assets regenerate daily via .github/workflows/control-room.yml -->
+<a href="https://github.com/FelixFangX">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/hero-dark.svg">
+  <img alt="Felix Fang — Agent Control Room. Agents run the ops, I keep the judgment. Building Become Human: portable, private, correctable memory for agents. The banner scene changes every day." src="./assets/hero-light.svg" width="100%">
+</picture>
+</a>
 
-  <p>
-    <img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB" />
-    <img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white" />                                                              
-    <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" />
-    <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white" />                                                              
-    <img src="https://img.shields.io/badge/RAG-111827?style=flat-square" />                                                                                                 
-    <img src="https://img.shields.io/badge/LLM%20Apps-7C3AED?style=flat-square" />                                                                                          
-    <img src="https://img.shields.io/badge/Workflow%20Automation-0EA5E9?style=flat-square" />                                                                               
-  </p>                                                                                                                                                                      
-                                                                                                                                                                            
-  </div>                                                                                                                                                                    
-                                                                                                                                                                            
-  ---                                                                                                                                                                       
-                                                            
-  ## About                                                                                                                                                                  
-                                                            
-  I build products where **interface**, **intelligence**, and **execution** come together.                                                                                  
-                                                            
-  My background started in frontend engineering and data-heavy systems.                                                                                                     
-  Today, most of my work lives at the intersection of **product engineering**, **AI applications**, and **workflow automation**.
-                                                                                                                                                                            
-  I enjoy turning complex capabilities into software that feels simple, fast, and useful.                                                                                   
-                                                                                                                                                                            
-  ---                                                                                                                                                                       
-                                                            
-  ## What I work on                                                                                                                                                         
-                                                            
-  - AI applications with real product value                                                                                                                                 
-  - RAG and knowledge retrieval systems                     
-  - workflow orchestration and internal tools                                                                                                                               
-  - frontend architecture for complex interfaces                                                                                                                            
-  - AI-powered experiences that fit real business operations                                                                                                                
-                                                                                                                                                                            
-  ---                                                                                                                                                                       
-                                                                                                                                                                            
-  ## Tech Stack                                                                                                                                                             
-                                                            
-  ### Core                                                                                                                                                                  
-                                                            
-  <p>                                                                                                                                                                       
-    <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" />
-    <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />                                                        
-    <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />                                                                 
-    <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" />                                                            
-    <img src="https://img.shields.io/badge/Zustand-433E38?style=for-the-badge" />                                                                                           
-    <img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" />                                                                    
-    <img src="https://img.shields.io/badge/Webpack-8DD6F9?style=for-the-badge&logo=webpack&logoColor=black" />                                                              
-  </p>                                                                                                                                                                      
-                                                                                                                                                                            
-  ### AI / Workflow                                                                                                                                                         
-                                                                                                                                                                            
-  <p>                                                                                                                                                                       
-    <img src="https://img.shields.io/badge/LLM%20Applications-111827?style=for-the-badge" />
-    <img src="https://img.shields.io/badge/RAG-4F46E5?style=for-the-badge" />                                                                                               
-    <img src="https://img.shields.io/badge/Tool%20Calling-7C3AED?style=for-the-badge" />                                                                                    
-    <img src="https://img.shields.io/badge/Prompt%20Engineering-9333EA?style=for-the-badge" />                                                                              
-    <img src="https://img.shields.io/badge/n8n-EA4B71?style=for-the-badge&logo=n8n&logoColor=white" />                                                                      
-    <img src="https://img.shields.io/badge/Ollama-000000?style=for-the-badge" />                                                                                            
-    <img src="https://img.shields.io/badge/Claude%20Code-D97706?style=for-the-badge" />                                                                                     
-  </p>                                                                                                                                                                      
-                                                                                                                                                                            
-  ### Backend / Infra                                                                                                                                                       
-                                                                                                                                                                            
-  <p>                                                                                                                                                                       
-    <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" />
-    <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" />                                                                
-    <img src="https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white" />                                                            
-    <img src="https://img.shields.io/badge/PostHog-000000?style=for-the-badge&logo=posthog&logoColor=white" />                                                              
-    <img src="https://img.shields.io/badge/MinIO-C72E49?style=for-the-badge&logo=minio&logoColor=white" />                                                                  
-    <img src="https://img.shields.io/badge/S3%20Storage-569A31?style=for-the-badge&logo=amazons3&logoColor=white" />                                                        
-  </p>                                                                                                                                                                      
-                                                                                                                                                                            
-  ---                                                                                                                                                                       
-                                                                                                                                                                         
-  ## How I Build                                                                                                                                                            
-   
-  > Build the useful thing.                                                                                                                                                 
-  > Keep the system clean.                                  
-  > Let the interface carry the complexity.                                                                                                                                 
-                                                                                                                                                                            
-  I care about:                                                                                                                                                             
-                                                                                                                                                                            
-  - practical architecture                                                                                                                                                  
-  - product-minded engineering                              
-  - fast but reliable iteration                                                                                                                                             
-  - AI features grounded in real workflows                                                                                                                                  
-  - frontend experiences that stay smooth under real load                                                                                                                   
-                                                                                                                                                                            
-  ---                                                                                                                                                                       
-                                                                                                                                                                            
-  ## Interests                                                                                                                                                              
-                                                            
-  - AI products                                                                                                                                                             
-  - developer tooling                                       
-  - workflow orchestration                                                                                                                                                  
-  - knowledge systems                                                                                                                                                       
-  - streaming interfaces                                                                                                                                                    
-  - product-minded engineering                                                                                                                                              
-                                                                                                                                                                            
-  ---                                                                                                                                                                                                                                                                                                                                                       
-  <div align="center">                                                                                                                                                      
-                                                            
-  ### interface × intelligence × execution                                                                                                                                  
-                                                            
-  </div>
+> *Man, I don't even know how I'd function without AI.* So I made it work properly: specs instead of vibes, evidence instead of flattery, memory I own instead of memory a vendor owns.
+
+## The control room
+
+My agents run the repetitive parts of work and life. I stay in the loop where judgment matters: what to build, how to test it, and whether it actually works.
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/layers-dark.svg">
+  <img alt="Two layers. Agent layer handles ops: research-thinking-ai, n8n-workflow-collection, tech-news-digest, lakeboard-converter. Human layer keeps judgment: spec, seams, review, decide. Specs flow to agents; evidence and diffs flow back." src="./assets/layers-light.svg" width="100%">
+</picture>
+
+| Agent layer | What it takes off my plate |
+|---|---|
+| [**research-thinking-ai**](https://github.com/FelixFangX/research-thinking-ai) | Turns a vague research interest into evidence-tiered directions · [live](https://research-thinking-ai.vercel.app) |
+| [**n8n-workflow-collection**](https://github.com/FelixFangX/n8n-workflow-collection) | Lark/Feishu bot messages → Bitable records and PRD drafts; social metrics tracking |
+| [**tech-news-digest**](https://github.com/FelixFangX/tech-news-digest) | Papers, GitHub Trending and Stack Overflow, ranked to my interests every morning |
+| [**lakeboard-converter**](https://github.com/FelixFangX/lakeboard-converter) | Yuque Lakeboard / XMind → Markdown that agents can read |
+
+## Operating principles
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/principles-dark.svg">
+  <img alt="01 Spec before code. 02 No flattery. 03 Verify, then answer. 04 Memory you own: portable, private, correctable, not tied to any model." src="./assets/principles-light.svg" width="100%">
+</picture>
+
+## Now building: Become Human
+
+A personal memory layer for agents that is **portable** (plain files, any model), **private** (stays on your disk), and **correctable** (you can see and fix what it believes about you). The method is being turned into a public, structure-only template.
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/status-dark.svg">
+  <img alt="Become Human plan status. Stages: Spec, Slices, Tests, Release. Status is set by hand." src="./assets/status-light.svg" width="100%">
+</picture>
+
+## Agent log
+
+<sub>Pulled from my public GitHub activity by a daily Action. Real events only.</sub>
+
+<!-- agent-log:start -->
+| date&nbsp;(UTC) | repo | latest commit |
+|---|---|---|
+| 2026-10-12 | [tech-news-digest](https://github.com/FelixFangX/tech-news-digest) | 2026-10-12 11:26:18 自动备份 |
+| 2026-09-04 | [fitness-guide](https://github.com/FelixFangX/fitness-guide) | ci: use pnpm in github actions |
+| 2026-04-19 | [llm-resume-platform](https://github.com/FelixFangX/llm-resume-platform) | chore: clean up repo — remove design doc, add bilingual README, standard |
+| 2026-04-19 | [lakeboard-converter](https://github.com/FelixFangX/lakeboard-converter) | feat: add interactive TUI mode for guided conversion |
+| 2026-04-18 | [research-thinking-ai](https://github.com/FelixFangX/research-thinking-ai) | chore(git): 优化.gitignore文件并添加本地运行时状态忽略规则 |
+| 2026-03-20 | [n8n-workflow-collection](https://github.com/FelixFangX/n8n-workflow-collection) | docs(readme): make workflow docs English-default and add zh-CN variants |
+<!-- agent-log:end -->
+
+<details>
+<summary><b>How I build with agents</b></summary>
+
+```text
+spec    problem, user stories, out-of-scope; written before any code
+slice   tracer-bullet tickets, each demoable in one agent session
+test    red → green at agreed seams; LLMs and APIs behind adapters
+review  two axes: does it follow the standards, does it match the spec
+```
+
+Stack I reach for: TypeScript · React/Next.js · Node · Python · n8n · Lark Open Platform · MCP · Claude Code / Codex / Cursor.
+I learn by building and by arguing with docs, so most of what's here started as a practice project.
+</details>
+
+<sub>The banner scene rotates daily across focus, recovery and fun: deep work, dialogue, markets, recovery, live set, premiere. Nobody needs the same day twice.</sub>
