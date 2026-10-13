@@ -10,7 +10,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with: { node-version: 22 }
-      - run: node --test tests/
+      - run: node --test tests/*.test.mjs
       - run: node src/build.mjs
         env: { GH_TOKEN: "${{ secrets.GITHUB_TOKEN }}" }
       - run: |
