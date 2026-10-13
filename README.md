@@ -48,12 +48,12 @@ A personal memory layer for agents that is **portable** (plain files, any model)
 <!-- agent-log:start -->
 | date&nbsp;(UTC) | repo | latest commit |
 |---|---|---|
+| 2026-10-13 | [agent-memory-vault](https://github.com/FelixFangX/agent-memory-vault) | docs: Control Room README + CI on Node 20/22 (#9) |
+| 2026-10-13 | [tech-news-digest](https://github.com/FelixFangX/tech-news-digest) | chore: remove obsolete repair_0511 script |
 | 2026-10-13 | [research-thinking-ai](https://github.com/FelixFangX/research-thinking-ai) | ci: pin pnpm major version |
 | 2026-10-13 | [n8n-workflow-collection](https://github.com/FelixFangX/n8n-workflow-collection) | ci: explicit test glob for Node 22 |
-| 2026-10-13 | [tech-news-digest](https://github.com/FelixFangX/tech-news-digest) | chore: fresh start |
 | 2026-10-13 | [lakeboard-converter](https://github.com/FelixFangX/lakeboard-converter) | ci: run tests on push and pull requests |
 | 2026-09-04 | [fitness-guide](https://github.com/FelixFangX/fitness-guide) | ci: use pnpm in github actions |
-| 2026-04-19 | [llm-resume-platform](https://github.com/FelixFangX/llm-resume-platform) | chore: clean up repo — remove design doc, add bilingual README, standard |
 <!-- agent-log:end -->
 
 <details>
