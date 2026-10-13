@@ -23,6 +23,7 @@ My agents run the repetitive parts of work and life. I stay in the loop where ju
 | [**n8n-workflow-collection**](https://github.com/FelixFangX/n8n-workflow-collection) | Lark/Feishu bot messages → Bitable records and PRD drafts; social metrics tracking |
 | [**tech-news-digest**](https://github.com/FelixFangX/tech-news-digest) | Papers, GitHub Trending and Stack Overflow, ranked to my interests every morning |
 | [**lakeboard-converter**](https://github.com/FelixFangX/lakeboard-converter) | Yuque Lakeboard / XMind → Markdown that agents can read |
+| [**agent-memory-vault**](https://github.com/FelixFangX/agent-memory-vault) | Template for portable, private, correctable agent memory, plus a checker that keeps secrets and guesses out |
 
 ## Operating principles
 
@@ -33,7 +34,7 @@ My agents run the repetitive parts of work and life. I stay in the loop where ju
 
 ## Now building: Become Human
 
-A personal memory layer for agents that is **portable** (plain files, any model), **private** (stays on your disk), and **correctable** (you can see and fix what it believes about you). The method is being turned into a public, structure-only template.
+A personal memory layer for agents that is **portable** (plain files, any model), **private** (stays on your disk), and **correctable** (you can see and fix what it believes about you). The method is now a public, structure-only template: [**agent-memory-vault**](https://github.com/FelixFangX/agent-memory-vault).
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/status-dark.svg">
