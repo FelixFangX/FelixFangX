@@ -14,6 +14,3 @@
 
 Previews: rendered from GitHub's own Markdown API output + github-markdown-css in headless Chrome (`../renderer/`).
 
-## Enabling the daily Action
-The workflow lives at `docs/control-room.workflow.yml` because the token used to push this change lacks the `workflow` scope.
-To enable: `gh auth refresh -s workflow`, then `git mv docs/control-room.workflow.yml .github/workflows/control-room.yml`, push, and run it once via **Actions → control-room → Run workflow**. It needs `permissions: contents: write` (already declared).
