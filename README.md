@@ -58,12 +58,12 @@ A personal memory layer for agents that is **portable** (plain files, any model)
 <!-- agent-log:start -->
 | date&nbsp;(UTC) | repo | latest commit |
 |---|---|---|
+| 2026-10-14 | [ledring](https://github.com/FelixFangX/ledring) | docs(demo): literary Chinese copy — 四字格, apt 成语, 对仗 headlines; viewer zh |
+| 2026-10-14 | [research-thinking-ai](https://github.com/FelixFangX/research-thinking-ai) | fix(watch): degrade gracefully without the private digest (#12) |
 | 2026-10-14 | [dev-work-grok-bot-skill](https://github.com/FelixFangX/dev-work-grok-bot-skill) | docs: README in house style with For agents section (#21) |
-| 2026-10-14 | [research-thinking-ai](https://github.com/FelixFangX/research-thinking-ai) | feat(eval): on-topic evidence metric and edge mode (#11) |
 | 2026-10-14 | [lakeboard-converter](https://github.com/FelixFangX/lakeboard-converter) | fix: canonical GitHub link in web app (#8) |
 | 2026-10-14 | [n8n-workflow-collection](https://github.com/FelixFangX/n8n-workflow-collection) | feat: agent-callable workflow manifests, n8n MCP docs and manifest check |
 | 2026-09-04 | [fitness-guide](https://github.com/FelixFangX/fitness-guide) | ci: use pnpm in github actions |
-| 2026-04-19 | [llm-resume-platform](https://github.com/FelixFangX/llm-resume-platform) | chore: clean up repo — remove design doc, add bilingual README, standard |
 <!-- agent-log:end -->
 
 <details>
