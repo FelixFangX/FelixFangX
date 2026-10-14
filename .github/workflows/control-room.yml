@@ -14,7 +14,8 @@ jobs:
       - run: node src/build.mjs
         env: { GH_TOKEN: "${{ secrets.GITHUB_TOKEN }}" }
       - run: |
-          git diff --quiet && exit 0
+          git add README.md assets llms.txt status.json
+          git diff --cached --quiet && exit 0
           git config user.name "control-room[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git commit -am "chore(profile): daily scene + agent log" && git push
+          git commit -m "chore(profile): daily scene, agent log and system map" && git push
