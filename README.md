@@ -21,7 +21,7 @@ My agents run the repetitive parts of work and life. I stay in the loop where ju
 |---|---|
 | [**research-thinking-ai**](https://github.com/FelixFangX/research-thinking-ai) | Turns a vague research interest into evidence-tiered directions · [live](https://research-thinking-ai.vercel.app) |
 | [**n8n-workflow-collection**](https://github.com/FelixFangX/n8n-workflow-collection) | Lark/Feishu bot messages → Bitable records and PRD drafts; social metrics tracking |
-| [**tech-news-digest**](https://github.com/FelixFangX/tech-news-digest) | Papers, GitHub Trending and Stack Overflow, ranked to my interests every morning |
+| **tech-news-digest** <sub>(private)</sub> | Papers, GitHub Trending and Stack Overflow, ranked to my interests every morning |
 | [**lakeboard-converter**](https://github.com/FelixFangX/lakeboard-converter) | Yuque Lakeboard / XMind → Markdown that agents can read |
 | [**dev-work-grok-bot-skill**](https://github.com/FelixFangX/dev-work-grok-bot-skill) | A Grok Bot skill that sets up a careful developer assistant: repos, tracker, team chat, preview tests, with a secret/PII checker |
 
@@ -31,7 +31,7 @@ My agents run the repetitive parts of work and life. I stay in the loop where ju
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/system-map-dark.svg">
-  <img alt="Live system map: sense (tech-news-digest, lakeboard-converter, n8n-workflow-collection) feeds think (research-thinking-ai) feeds act (dev-work-grok-bot-skill). Each node shows its real CI status, last scheduled run and latest eval result." src="./assets/system-map-light.svg" width="100%">
+  <img alt="Live system map: sense (tech-news-digest, lakeboard-converter, n8n-workflow-collection) feeds think (research-thinking-ai) feeds act (dev-work-grok-bot-skill). Each public node shows its real CI status, last scheduled run and latest eval result; the private digest shows no status." src="./assets/system-map-light.svg" width="100%">
 </picture>
 
 ## Operating principles
@@ -57,12 +57,12 @@ A personal memory layer for agents that is **portable** (plain files, any model)
 <!-- agent-log:start -->
 | date&nbsp;(UTC) | repo | latest commit |
 |---|---|---|
-| 2026-10-14 | [research-thinking-ai](https://github.com/FelixFangX/research-thinking-ai) | feat: research-thinking MCP server (propose_directions, expand) + weekly |
-| 2026-10-14 | [tech-news-digest](https://github.com/FelixFangX/tech-news-digest) | feat: 👍/👎 feedback loop for ranking, off by default, with offline eval |
+| 2026-10-14 | [dev-work-grok-bot-skill](https://github.com/FelixFangX/dev-work-grok-bot-skill) | docs: README in house style with For agents section (#21) |
+| 2026-10-14 | [research-thinking-ai](https://github.com/FelixFangX/research-thinking-ai) | feat(eval): on-topic evidence metric and edge mode (#11) |
+| 2026-10-14 | [lakeboard-converter](https://github.com/FelixFangX/lakeboard-converter) | fix: canonical GitHub link in web app (#8) |
 | 2026-10-14 | [n8n-workflow-collection](https://github.com/FelixFangX/n8n-workflow-collection) | feat: agent-callable workflow manifests, n8n MCP docs and manifest check |
-| 2026-10-14 | [dev-work-grok-bot-skill](https://github.com/FelixFangX/dev-work-grok-bot-skill) | feat: scenario safety evals with published pass rate (#18) (#19) |
-| 2026-10-14 | [lakeboard-converter](https://github.com/FelixFangX/lakeboard-converter) | feat: --json CLI, read command and read-only MCP convert tool (#5) (#6) |
 | 2026-09-04 | [fitness-guide](https://github.com/FelixFangX/fitness-guide) | ci: use pnpm in github actions |
+| 2026-04-19 | [llm-resume-platform](https://github.com/FelixFangX/llm-resume-platform) | chore: clean up repo — remove design doc, add bilingual README, standard |
 <!-- agent-log:end -->
 
 <details>

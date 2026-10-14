@@ -4,7 +4,7 @@ import { svg, esc } from "./svg.mjs";
 
 export const SYSTEM = {
   nodes: [
-    { repo: "tech-news-digest", layer: "sense", what: "Daily ranked digest of papers, repos and Q&A", entry: "MCP get_digest · digest_cli.py --json",
+    { repo: "tech-news-digest", layer: "sense", private: true, what: "Daily ranked digest of papers, repos and Q&A", entry: "MCP get_digest · digest_cli.py --json",
       schedule: { file: "daily-digest.yml", name: "Daily Tech News Digest" }, eval: { file: "evals/results-feedback.json", fmt: (j) => `feedback P@3 ${f2(j.baseline_precision_at_k)}→${f2(j.feedback_precision_at_k)} (${j.reader})` } },
     { repo: "lakeboard-converter", layer: "sense", what: "Yuque Lakeboard / XMind mind maps for agents", entry: "MCP convert · read --json" },
     { repo: "n8n-workflow-collection", layer: "sense", what: "Lark/Bitable n8n workflows with agent manifests", entry: "n8n MCP execute_workflow · manifests --json" },
@@ -22,6 +22,8 @@ export async function collectStatus(gh, owner, now = () => new Date().toISOStrin
   const repos = {};
   for (const n of SYSTEM.nodes) {
     const s = {};
+    // Private repos: never queried, never linked, no status published.
+    if (n.private) { repos[n.repo] = { private: true }; continue; }
     try {
       const info = await gh(`/repos/${owner}/${n.repo}`);
       const runs = await gh(`/repos/${owner}/${n.repo}/actions/runs?branch=${info.default_branch}&event=push&per_page=20`);
@@ -62,12 +64,12 @@ export function renderSystemMap({ theme, status }) {
 ${list.map((n, i) => {
   const s = status.repos?.[n.repo] ?? {};
   const y = 44 + i * 132;
-  const lines = [
+  const lines = n.private ? [["private repo", t.dim], ["status not published", t.dim]] : [
     [ciLabel(s), color(s.ci?.conclusion)],
     s.schedule ? [`${s.schedule.name}: ${s.schedule.conclusion} · ${day(s.schedule.at)}`, color(s.schedule.conclusion)] : null,
     [s.eval ?? (n.eval ? "eval no data" : "tests in CI, no eval yet"), s.eval ? t.text : t.dim],
   ].filter(Boolean);
-  return `<g data-repo="${n.repo}" data-ci="${s.ci?.conclusion ?? "unknown"}"><rect x="0" y="${y}" width="340" height="120" rx="12" fill="${t.panel}" stroke="${t.line}"/>
+  return `<g data-repo="${n.repo}" data-ci="${n.private ? "private" : s.ci?.conclusion ?? "unknown"}"><rect x="0" y="${y}" width="340" height="120" rx="12" fill="${t.panel}" stroke="${t.line}"/>
 <circle cx="22" cy="${y + 24}" r="6" fill="${color(s.ci?.conclusion)}"${s.ci?.conclusion === "success" ? ' class="pulse"' : ""}/>
 <text x="38" y="${y + 29}" fill="${t.text}" font-size="16" font-weight="600">${esc(n.repo)}</text>
 <text x="20" y="${y + 50}" fill="${t.dim}" font-size="12" font-family="${MONO}">${esc(n.entry)}</text>
@@ -78,7 +80,7 @@ ${lines.map(([txt, c], k) => `<text x="20" y="${y + 74 + k * 18}" fill="${c}" fo
     const x1 = cols[a] + 340, x2 = cols[b];
     return `<line class="flow" x1="${x1 + 4}" y1="104" x2="${x2 - 4}" y2="104" stroke="${accent[b]}" stroke-width="2"/><text x="${(x1 + x2) / 2}" y="94" text-anchor="middle" fill="${t.dim}" font-size="11">${label}</text>`;
   }).join("");
-  const summary = SYSTEM.nodes.map((n) => `${n.repo}: ${ciLabel(status.repos?.[n.repo])}${status.repos?.[n.repo]?.eval ? `, ${status.repos[n.repo].eval}` : ""}`).join("; ");
+  const summary = SYSTEM.nodes.map((n) => n.private ? `${n.repo}: private` : `${n.repo}: ${ciLabel(status.repos?.[n.repo])}${status.repos?.[n.repo]?.eval ? `, ${status.repos[n.repo].eval}` : ""}`).join("; ");
   return svg({
     w: 1200, h: H,
     title: "Live system map: sense, think, act",
@@ -94,6 +96,7 @@ ${flows}
 export function renderLlmsTxt({ owner, status }) {
   const base = `https://github.com/${owner}`;
   const line = (n) => {
+    if (n.private) return `- ${n.repo} (private repo, no public link or status): ${n.what}.`;
     const s = status.repos?.[n.repo] ?? {};
     const facts = [s.ci ? `CI ${s.ci.conclusion} ${day(s.ci.at)}` : "CI no data", s.schedule && `${s.schedule.name} ${s.schedule.conclusion} ${day(s.schedule.at)}`, s.eval].filter(Boolean).join("; ");
     return `- [${n.repo}](${base}/${n.repo}): ${n.what}. Agent entry: ${n.entry}. Status: ${facts}.`;

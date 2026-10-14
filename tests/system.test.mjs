@@ -5,7 +5,7 @@ import { SYSTEM, collectStatus, renderSystemMap, renderLlmsTxt } from "../src/sy
 const status = {
   updated: "2026-10-14T04:00:00Z",
   repos: {
-    "tech-news-digest": { ci: { conclusion: "success", at: "2026-10-14T03:00:00Z" }, schedule: { name: "Daily Tech News Digest", conclusion: "failure", at: "2026-10-11T08:38:11Z" }, eval: "feedback P@3 0.80→0.87 (simulated)" },
+    "research-thinking-ai": { ci: { conclusion: "success", at: "2026-10-14T03:00:00Z" }, schedule: { name: "Weekly research watch", conclusion: "failure", at: "2026-10-11T08:38:11Z" }, eval: "citations 100% real (n=20)" },
     "lakeboard-converter": { ci: { conclusion: "success", at: "2026-10-14T03:20:00Z" } },
   },
 };
@@ -18,15 +18,15 @@ test("every node is a sense, think or act repo with an agent entry point", () =>
 });
 test("map shows only the data it was given; missing repos say 'no data'", () => {
   const svg = renderSystemMap({ theme: "dark", status });
-  assert.match(svg, /feedback P@3 0\.80→0\.87 \(simulated\)/);
-  assert.match(svg, /Daily Tech News Digest: failure/);
+  assert.match(svg, /citations 100% real \(n=20\)/);
+  assert.match(svg, /Weekly research watch: failure/);
   assert.match(svg, /no data/);
   assert.doesNotMatch(svg, /undefined|NaN/);
 });
 test("CI status drives node colour: failing differs from passing", () => {
   const svg = renderSystemMap({ theme: "light", status });
-  assert.match(svg, /data-repo="tech-news-digest"[^>]*data-ci="success"/);
-  assert.match(svg, /data-repo="research-thinking-ai"[^>]*data-ci="unknown"/);
+  assert.match(svg, /data-repo="research-thinking-ai"[^>]*data-ci="success"/);
+  assert.match(svg, /data-repo="dev-work-grok-bot-skill"[^>]*data-ci="unknown"/);
 });
 test("map is accessible, animated flow respects reduced motion, and dated", () => {
   const svg = renderSystemMap({ theme: "dark", status });
@@ -53,4 +53,20 @@ test("collectStatus reads CI runs, scheduled runs and eval files; errors become 
   assert.equal(s.repos["dev-work-grok-bot-skill"].ci.conclusion, "success");
   assert.equal(s.repos["dev-work-grok-bot-skill"].eval, "safety scenarios 20/20");
   assert.deepEqual(s.repos["lakeboard-converter"], {});
+});
+
+test("private repos are never queried, linked or given a status", async () => {
+  const priv = SYSTEM.nodes.filter((n) => n.private).map((n) => n.repo);
+  assert.ok(priv.includes("tech-news-digest"));
+  const asked = [];
+  const st = await collectStatus(async (p) => { asked.push(p); throw new Error("404"); }, "someone", () => "2026-10-14T00:00:00Z");
+  assert.ok(!asked.some((p) => priv.some((r) => p.includes(`/${r}`))), "private repo was queried");
+  for (const r of priv) assert.deepEqual(st.repos[r], { private: true });
+  const txt = renderLlmsTxt({ owner: "someone", status: st });
+  const svg = renderSystemMap({ theme: "dark", status: st });
+  for (const r of priv) {
+    assert.doesNotMatch(txt, new RegExp(`github\\.com/someone/${r}`));
+    assert.match(txt, new RegExp(`${r} \\(private`));
+    assert.match(svg, new RegExp(`data-repo="${r}"[^>]*data-ci="private"`));
+  }
 });
