@@ -19,11 +19,13 @@ const [user, repos] = await Promise.all([
   gh(`/users/${cfg.user}`),
   gh(`/users/${cfg.user}/repos?per_page=100&sort=pushed&type=owner`),
 ]);
-const own = repos.filter((r) => !r.fork && r.name !== cfg.user);
-const commits = await Promise.all(own.slice(0, 6).map(async (r) => {
-  const [c] = await gh(`/repos/${r.full_name}/commits?per_page=1`);
-  return { repo: r.full_name, date: c.commit.committer.date, message: c.commit.message };
-}));
+const own = repos.filter((r) => !r.fork && !r.private && r.name !== cfg.user);
+const commits = (await Promise.all(own.slice(0, 6).map(async (r) => {
+  try {
+    const [c] = await gh(`/repos/${r.full_name}/commits?per_page=1`);
+    return { repo: r.full_name, date: c.commit.committer.date, message: c.commit.message };
+  } catch { return null; } // unreadable repo: skip, don't fail the Action
+}))).filter(Boolean);
 const data = { latestRepo: own[0]?.name, publicRepos: user.public_repos };
 
 await mkdir("assets/scenes", { recursive: true });

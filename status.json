@@ -1,22 +1,13 @@
 {
-  "updated": "2026-10-14T03:44:35.269Z",
+  "updated": "2026-10-14T09:31:17.867Z",
   "repos": {
     "tech-news-digest": {
-      "ci": {
-        "conclusion": "success",
-        "at": "2026-10-14T03:38:05Z"
-      },
-      "schedule": {
-        "name": "Daily Tech News Digest",
-        "conclusion": "failure",
-        "at": "2026-10-11T08:38:21Z"
-      },
-      "eval": "feedback P@3 0.80→0.87 (simulated)"
+      "private": true
     },
     "lakeboard-converter": {
       "ci": {
         "conclusion": "success",
-        "at": "2026-10-14T03:25:06Z"
+        "at": "2026-10-14T06:37:41Z"
       }
     },
     "n8n-workflow-collection": {
@@ -28,19 +19,19 @@
     "research-thinking-ai": {
       "ci": {
         "conclusion": "success",
-        "at": "2026-10-14T03:40:35Z"
+        "at": "2026-10-14T06:41:55Z"
       },
       "schedule": {
         "name": "Weekly research watch",
         "conclusion": "success",
         "at": "2026-10-14T03:40:35Z"
       },
-      "eval": "citations verified 100% (20 interests, openalex)"
+      "eval": "citations 100% real, 88% on-topic (n=20)"
     },
     "dev-work-grok-bot-skill": {
       "ci": {
         "conclusion": "success",
-        "at": "2026-10-14T03:28:49Z"
+        "at": "2026-10-14T09:25:51Z"
       },
       "eval": "safety scenarios 20/20"
     }
