@@ -25,6 +25,15 @@ My agents run the repetitive parts of work and life. I stay in the loop where ju
 | [**lakeboard-converter**](https://github.com/FelixFangX/lakeboard-converter) | Yuque Lakeboard / XMind → Markdown that agents can read |
 | [**dev-work-grok-bot-skill**](https://github.com/FelixFangX/dev-work-grok-bot-skill) | A Grok Bot skill that sets up a careful developer assistant: repos, tracker, team chat, preview tests, with a secret/PII checker |
 
+## Live system map
+
+<sub>Sense → think → act. Built daily from GitHub Actions runs and committed eval results only; failing runs show as failing. Agents: read [`llms.txt`](./llms.txt) or [`status.json`](./status.json).</sub>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/system-map-dark.svg">
+  <img alt="Live system map: sense (tech-news-digest, lakeboard-converter, n8n-workflow-collection) feeds think (research-thinking-ai) feeds act (dev-work-grok-bot-skill). Each node shows its real CI status, last scheduled run and latest eval result." src="./assets/system-map-light.svg" width="100%">
+</picture>
+
 ## Operating principles
 
 <picture>
