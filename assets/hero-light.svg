@@ -20,7 +20,7 @@
 <text x="56" y="186" fill="#1f2328" font-size="22" font-weight="500">Agents run the ops. I keep the judgment.</text>
 <text x="56" y="216" fill="#59636e" font-size="15">Building <tspan fill="#1f2328" font-weight="600">Become Human</tspan>: portable, private, correctable memory for agents.</text>
 <text x="56" y="246" fill="#59636e" font-size="15" font-style="italic">“Read the signal, ignore the noise.”</text>
-<text x="56" y="300" fill="#59636e" font-size="13" font-family="ui-monospace,SFMono-Regular,'JetBrains Mono',Menlo,Consolas,monospace"><tspan fill="#16a34a">$</tspan> last push → dev-work-grok-bot-skill   ·   7 public repos <tspan class="cursor" fill="#16a34a">▍</tspan></text>
+<text x="56" y="300" fill="#59636e" font-size="13" font-family="ui-monospace,SFMono-Regular,'JetBrains Mono',Menlo,Consolas,monospace"><tspan fill="#16a34a">$</tspan> last push → ledring   ·   8 public repos <tspan class="cursor" fill="#16a34a">▍</tspan></text>
 <g transform="translate(720 56)"><line x1="0" y1="60" x2="440" y2="60" stroke="#d8dee4" stroke-dasharray="3 5"/><line x1="0" y1="120" x2="440" y2="120" stroke="#d8dee4" stroke-dasharray="3 5"/><line x1="0" y1="180" x2="440" y2="180" stroke="#d8dee4" stroke-dasharray="3 5"/>
 <path class="draw" d="M0 180 L38 170 L76 185 L114 150 L152 160 L190 120 L228 135 L266 100 L304 115 L342 80 L380 95 L418 60" fill="none" stroke="#16a34a" stroke-width="2.5" stroke-linejoin="round"/>
 <text x="440" y="240" text-anchor="end" fill="#59636e" font-size="12" font-family="ui-monospace,SFMono-Regular,'JetBrains Mono',Menlo,Consolas,monospace">illustrative curve · not market data</text></g>
