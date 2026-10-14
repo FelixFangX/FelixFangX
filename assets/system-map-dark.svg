@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="470" viewBox="0 0 1200 470" role="img" aria-labelledby="t d" font-family="ui-sans-serif,-apple-system,'Segoe UI',Inter,Helvetica,Arial,sans-serif">
+<title id="t">Live system map: sense, think, act</title>
+<desc id="d">Built from GitHub Actions and committed eval results on 2026-10-14. tech-news-digest: CI success · 2026-10-14, feedback P@3 0.80→0.87 (simulated); lakeboard-converter: CI success · 2026-10-14; n8n-workflow-collection: CI success · 2026-10-14; research-thinking-ai: CI success · 2026-10-14, citations verified 100% (20 interests, openalex); dev-work-grok-bot-skill: CI success · 2026-10-14, safety scenarios 20/20</desc>
+<style>.flow{stroke-dasharray:6 8;animation:f 1.4s linear infinite}@keyframes f{to{stroke-dashoffset:-14}}.pulse{animation:p 2.4s ease-in-out infinite}@keyframes p{50%{opacity:.35}}@media (prefers-reduced-motion: reduce){*{animation:none!important}}</style>
+<rect class="bg" width="1200" height="470" fill="#0b0f17"/>
+<g transform="translate(0 0)"><text x="0" y="28" fill="#38bdf8" font-size="12" font-weight="700" letter-spacing="3">SENSE</text>
+<g data-repo="tech-news-digest" data-ci="success"><rect x="0" y="44" width="340" height="120" rx="12" fill="#111827" stroke="#273142"/>
+<circle cx="22" cy="68" r="6" fill="#3fb950" class="pulse"/>
+<text x="38" y="73" fill="#e6edf3" font-size="16" font-weight="600">tech-news-digest</text>
+<text x="20" y="94" fill="#8b949e" font-size="12" font-family="ui-monospace,SFMono-Regular,'JetBrains Mono',Menlo,Consolas,monospace">MCP get_digest · digest_cli.py --json</text>
+<text x="20" y="118" fill="#3fb950" font-size="12.5">CI success · 2026-10-14</text><text x="20" y="136" fill="#f85149" font-size="12.5">Daily Tech News Digest: failure · 2026-10-11</text><text x="20" y="154" fill="#e6edf3" font-size="12.5">feedback P@3 0.80→0.87 (simulated)</text></g>
+<g data-repo="lakeboard-converter" data-ci="success"><rect x="0" y="176" width="340" height="120" rx="12" fill="#111827" stroke="#273142"/>
+<circle cx="22" cy="200" r="6" fill="#3fb950" class="pulse"/>
+<text x="38" y="205" fill="#e6edf3" font-size="16" font-weight="600">lakeboard-converter</text>
+<text x="20" y="226" fill="#8b949e" font-size="12" font-family="ui-monospace,SFMono-Regular,'JetBrains Mono',Menlo,Consolas,monospace">MCP convert · read --json</text>
+<text x="20" y="250" fill="#3fb950" font-size="12.5">CI success · 2026-10-14</text><text x="20" y="268" fill="#8b949e" font-size="12.5">tests in CI, no eval yet</text></g>
+<g data-repo="n8n-workflow-collection" data-ci="success"><rect x="0" y="308" width="340" height="120" rx="12" fill="#111827" stroke="#273142"/>
+<circle cx="22" cy="332" r="6" fill="#3fb950" class="pulse"/>
+<text x="38" y="337" fill="#e6edf3" font-size="16" font-weight="600">n8n-workflow-collection</text>
+<text x="20" y="358" fill="#8b949e" font-size="12" font-family="ui-monospace,SFMono-Regular,'JetBrains Mono',Menlo,Consolas,monospace">n8n MCP execute_workflow · manifests --json</text>
+<text x="20" y="382" fill="#3fb950" font-size="12.5">CI success · 2026-10-14</text><text x="20" y="400" fill="#8b949e" font-size="12.5">tests in CI, no eval yet</text></g></g>
+<g transform="translate(430 0)"><text x="0" y="28" fill="#a78bfa" font-size="12" font-weight="700" letter-spacing="3">THINK</text>
+<g data-repo="research-thinking-ai" data-ci="success"><rect x="0" y="44" width="340" height="120" rx="12" fill="#111827" stroke="#273142"/>
+<circle cx="22" cy="68" r="6" fill="#3fb950" class="pulse"/>
+<text x="38" y="73" fill="#e6edf3" font-size="16" font-weight="600">research-thinking-ai</text>
+<text x="20" y="94" fill="#8b949e" font-size="12" font-family="ui-monospace,SFMono-Regular,'JetBrains Mono',Menlo,Consolas,monospace">MCP propose_directions, expand · eval --json</text>
+<text x="20" y="118" fill="#3fb950" font-size="12.5">CI success · 2026-10-14</text><text x="20" y="136" fill="#3fb950" font-size="12.5">Weekly research watch: success · 2026-10-14</text><text x="20" y="154" fill="#e6edf3" font-size="12.5">citations verified 100% (20 interests, openalex)</text></g></g>
+<g transform="translate(860 0)"><text x="0" y="28" fill="#fbbf24" font-size="12" font-weight="700" letter-spacing="3">ACT</text>
+<g data-repo="dev-work-grok-bot-skill" data-ci="success"><rect x="0" y="44" width="340" height="120" rx="12" fill="#111827" stroke="#273142"/>
+<circle cx="22" cy="68" r="6" fill="#3fb950" class="pulse"/>
+<text x="38" y="73" fill="#e6edf3" font-size="16" font-weight="600">dev-work-grok-bot-skill</text>
+<text x="20" y="94" fill="#8b949e" font-size="12" font-family="ui-monospace,SFMono-Regular,'JetBrains Mono',Menlo,Consolas,monospace">SKILL.md · skill-eval --json</text>
+<text x="20" y="118" fill="#3fb950" font-size="12.5">CI success · 2026-10-14</text><text x="20" y="136" fill="#e6edf3" font-size="12.5">safety scenarios 20/20</text></g></g>
+<line class="flow" x1="344" y1="104" x2="426" y2="104" stroke="#a78bfa" stroke-width="2"/><text x="385" y="94" text-anchor="middle" fill="#8b949e" font-size="11">signals</text><line class="flow" x1="774" y1="104" x2="856" y2="104" stroke="#fbbf24" stroke-width="2"/><text x="815" y="94" text-anchor="middle" fill="#8b949e" font-size="11">directions</text>
+<text x="1200" y="460" text-anchor="end" fill="#6e7681" font-size="11" font-family="ui-monospace,SFMono-Regular,'JetBrains Mono',Menlo,Consolas,monospace">live data · GitHub Actions + committed evals · updated 2026-10-14</text>
+</svg>
