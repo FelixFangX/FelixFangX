@@ -24,6 +24,7 @@ My agents run the repetitive parts of work and life. I stay in the loop where ju
 | **tech-news-digest** <sub>(private)</sub> | Papers, GitHub Trending and Stack Overflow, ranked to my interests every morning |
 | [**lakeboard-converter**](https://github.com/FelixFangX/lakeboard-converter) | Yuque Lakeboard / XMind → Markdown that agents can read |
 | [**dev-work-grok-bot-skill**](https://github.com/FelixFangX/dev-work-grok-bot-skill) | A Grok Bot skill that sets up a careful developer assistant: repos, tracker, team chat, preview tests, with a secret/PII checker |
+| [**ledring**](https://github.com/FelixFangX/ledring) | Status lights for my agents: replays many runs as one branch tree with divergence %, and scores how far a run drifted from its instruction. Claude Code + OpenTelemetry GenAI traces |
 
 ## Live system map
 
