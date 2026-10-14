@@ -9,7 +9,7 @@ export const SYSTEM = {
     { repo: "lakeboard-converter", layer: "sense", what: "Yuque Lakeboard / XMind mind maps for agents", entry: "MCP convert · read --json" },
     { repo: "n8n-workflow-collection", layer: "sense", what: "Lark/Bitable n8n workflows with agent manifests", entry: "n8n MCP execute_workflow · manifests --json" },
     { repo: "research-thinking-ai", layer: "think", what: "Interest → evidence-tiered research directions", entry: "MCP propose_directions, expand · eval --json",
-      schedule: { file: "weekly-watch.yml", name: "Weekly research watch" }, eval: { file: "evals/results-openalex.json", fmt: (j) => `citations verified ${Math.round(j.meanCitationVerifiedRate * 100)}% (${j.count} interests, ${j.mode})` } },
+      schedule: { file: "weekly-watch.yml", name: "Weekly research watch" }, eval: { file: "evals/results-openalex.json", fmt: (j) => `citations ${Math.round(j.meanCitationVerifiedRate * 100)}% real` + (j.meanEvidenceOnTopicRate != null ? `, ${Math.round(j.meanEvidenceOnTopicRate * 100)}% on-topic` : "") + ` (n=${j.count})` } },
     { repo: "dev-work-grok-bot-skill", layer: "act", what: "Assistant skill with safety rules and a secret/PII checker", entry: "SKILL.md · skill-eval --json",
       eval: { file: "evals/results-coverage.json", fmt: (j) => `safety scenarios ${j.passed}/${j.total}` } },
   ],
