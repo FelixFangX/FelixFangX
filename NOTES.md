@@ -2,6 +2,7 @@
 
 - Build: `node --test tests/` then `node src/build.mjs [--date=YYYY-MM-DD] [--all-scenes]` (Node 20+, no deps). Daily Action: `.github/workflows/control-room.yml`.
 - Real data only: hero facts (latest pushed own repo, public repo count) and the Agent log (latest commit of 6 most recently pushed own non-fork repos) come from the public GitHub API.
+- Live system map (`assets/system-map-*.svg`), `llms.txt` and `status.json` come from `src/system.mjs`: latest CI run on each repo's default branch, last scheduled run (digest, weekly watch) and committed eval files. Missing data renders as "no data".
 - Placeholder: Become Human stage is set by hand in `config.json` (`becomeHuman.stage`, currently 0 = Spec) and labelled "plan status · set by hand" in the SVG.
 - Illustrative only: the "markets" scene curve is labelled "not market data".
 

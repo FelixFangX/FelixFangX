@@ -1,9 +1,9 @@
 import { THEMES, FONT, MONO } from "./theme.mjs";
 import { SCENES } from "./scenes.mjs";
 
-const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);
+export const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);
 const REDUCED = `@media (prefers-reduced-motion: reduce){*{animation:none!important}}`;
-const svg = ({ w, h, title, desc, style, body }) =>
+export const svg = ({ w, h, title, desc, style, body }) =>
   `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" role="img" aria-labelledby="t d" ${FONT}>
 <title id="t">${esc(title)}</title>
 <desc id="d">${esc(desc)}</desc>
