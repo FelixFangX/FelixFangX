@@ -58,7 +58,7 @@ A personal memory layer for agents that is **portable** (plain files, any model)
 <!-- agent-log:start -->
 | date&nbsp;(UTC) | repo | latest commit |
 |---|---|---|
-| 2026-10-14 | [ledring](https://github.com/FelixFangX/ledring) | docs(demo): literary Chinese copy — 四字格, apt 成语, 对仗 headlines; viewer zh |
+| 2026-10-15 | [ledring](https://github.com/FelixFangX/ledring) | Make the zh play flow Chinese end to end (#91) |
 | 2026-10-14 | [research-thinking-ai](https://github.com/FelixFangX/research-thinking-ai) | fix(watch): degrade gracefully without the private digest (#12) |
 | 2026-10-14 | [dev-work-grok-bot-skill](https://github.com/FelixFangX/dev-work-grok-bot-skill) | docs: README in house style with For agents section (#21) |
 | 2026-10-14 | [lakeboard-converter](https://github.com/FelixFangX/lakeboard-converter) | fix: canonical GitHub link in web app (#8) |
