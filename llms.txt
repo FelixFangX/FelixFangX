@@ -2,7 +2,7 @@
 
 > Agent tooling, one pipeline: sources → agent-readable knowledge → tools agents can call (CLI --json, MCP) → an assistant under human control. Every repo has an AGENTS.md.
 
-Status below comes from GitHub Actions and committed eval files, updated 2026-10-14.
+Status below comes from GitHub Actions and committed eval files, updated 2026-10-15.
 
 ## Repos
 
