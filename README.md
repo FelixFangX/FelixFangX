@@ -6,13 +6,19 @@
 </picture>
 </a>
 
+<p align="center">
+  <a href="https://ledring.dev"><img alt="ledring.dev — Felix Fang's personal site" src="https://ledring.dev/og.png" width="640"></a>
+  <br>
+  <sub><b><a href="https://ledring.dev">ledring.dev</a></b> · my site · <a href="https://play.ledring.dev/play/">play LEDRING</a> · <a href="https://x.com/ColeFangX">X @ColeFangX</a></sub>
+</p>
+
 > *Man, I don't even know how I'd function without AI.* So I made it work properly: specs instead of vibes, evidence instead of flattery, memory I own instead of memory a vendor owns.
 
 ## ▶ Flagship: LEDRING
 
-[![LEDRING Play](https://raw.githubusercontent.com/FelixFangX/ledring/main/docs/assets/play.gif)](https://felixfangx.github.io/ledring/play/)
+[![LEDRING Play](https://raw.githubusercontent.com/FelixFangX/ledring/main/docs/assets/play.gif)](https://play.ledring.dev/play/)
 
-**[Play LEDRING in your browser](https://felixfangx.github.io/ledring/play/)**. You watch an AI builder make a web page and decide what gets through. The free built-in AI needs no key; the game is in English and 中文. Under the hood it is a toolkit that replays agent traces as branch trees and scores how far a run drifted from its instruction. **[Repo →](https://github.com/FelixFangX/ledring)**
+**[Play LEDRING in your browser](https://play.ledring.dev/play/)**. You watch an AI builder make a web page and decide what gets through. The free built-in AI needs no key; the game is in English and 中文. Under the hood it is a toolkit that replays agent traces as branch trees and scores how far a run drifted from its instruction. **[Repo →](https://github.com/FelixFangX/ledring)**
 
 ## The control room
 
