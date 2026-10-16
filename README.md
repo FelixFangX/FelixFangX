@@ -8,6 +8,12 @@
 
 > *Man, I don't even know how I'd function without AI.* So I made it work properly: specs instead of vibes, evidence instead of flattery, memory I own instead of memory a vendor owns.
 
+## ▶ Flagship: LEDRING
+
+[![LEDRING Play](https://raw.githubusercontent.com/FelixFangX/ledring/main/docs/assets/play.gif)](https://felixfangx.github.io/ledring/play/)
+
+**[Play LEDRING in your browser](https://felixfangx.github.io/ledring/play/)**. You watch an AI builder make a web page and decide what gets through. The free built-in AI needs no key; the game is in English and 中文. Under the hood it is a toolkit that replays agent traces as branch trees and scores how far a run drifted from its instruction. **[Repo →](https://github.com/FelixFangX/ledring)**
+
 ## The control room
 
 My agents run the repetitive parts of work and life. I stay in the loop where judgment matters: what to build, how to test it, and whether it actually works.
