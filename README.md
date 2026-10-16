@@ -12,7 +12,7 @@
   <sub><b><a href="https://ledring.dev">ledring.dev</a></b> · my site · <a href="https://play.ledring.dev/play/">play LEDRING</a> · <a href="https://x.com/ColeFangX">X @ColeFangX</a></sub>
 </p>
 
-> *Man, I don't even know how I'd function without AI.* So I made it work properly: specs instead of vibes, evidence instead of flattery, memory I own instead of memory a vendor owns.
+> Fast software, careful UI, open source, and an iced americano.
 
 ## ▶ Flagship: LEDRING
 
@@ -47,13 +47,6 @@ My agents run the repetitive parts of work and life. I stay in the loop where ju
   <img alt="Live system map: sense (tech-news-digest, lakeboard-converter, n8n-workflow-collection) feeds think (research-thinking-ai) feeds act (dev-work-grok-bot-skill). Each public node shows its real CI status, last scheduled run and latest eval result; the private digest shows no status." src="./assets/system-map-light.svg" width="100%">
 </picture>
 
-## Operating principles
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/principles-dark.svg">
-  <img alt="01 Spec before code. 02 No flattery. 03 Verify, then answer. 04 Memory you own: portable, private, correctable, not tied to any model." src="./assets/principles-light.svg" width="100%">
-</picture>
-
 ## Now building: Become Human
 
 A personal memory layer for agents that is **portable** (plain files, any model), **private** (stays on your disk), and **correctable** (you can see and fix what it believes about you).
@@ -79,17 +72,9 @@ A personal memory layer for agents that is **portable** (plain files, any model)
 <!-- agent-log:end -->
 
 <details>
-<summary><b>How I build with agents</b></summary>
-
-```text
-spec    problem, user stories, out-of-scope; written before any code
-slice   tracer-bullet tickets, each demoable in one agent session
-test    red → green at agreed seams; LLMs and APIs behind adapters
-review  two axes: does it follow the standards, does it match the spec
-```
+<summary><b>Tools I reach for</b></summary>
 
 Stack I reach for: TypeScript · React/Next.js · Node · Python · n8n · Lark Open Platform · MCP · Claude Code / Codex / Cursor.
-I learn by building and by arguing with docs, so most of what's here started as a practice project.
 </details>
 
 <sub>The banner scene rotates daily across focus, recovery and fun: deep work, dialogue, markets, recovery, live set, premiere. Nobody needs the same day twice.</sub>
