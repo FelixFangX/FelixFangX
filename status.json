@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-16T19:31:46.508Z",
+  "updated": "2026-10-17T18:25:18.608Z",
   "repos": {
     "tech-news-digest": {
       "private": true
@@ -7,7 +7,7 @@
     "lakeboard-converter": {
       "ci": {
         "conclusion": "success",
-        "at": "2026-10-16T07:46:14Z"
+        "at": "2026-10-17T17:20:52Z"
       }
     },
     "n8n-workflow-collection": {
@@ -19,7 +19,7 @@
     "research-thinking-ai": {
       "ci": {
         "conclusion": "success",
-        "at": "2026-10-16T07:38:00Z"
+        "at": "2026-10-17T17:21:06Z"
       },
       "schedule": {
         "name": "Weekly research watch",
