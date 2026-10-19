@@ -31,10 +31,10 @@ My agents run the repetitive parts of work and life. I stay in the loop where ju
 
 | Agent layer | What it takes off my plate |
 |---|---|
-| [**research-thinking-ai**](https://github.com/FelixFangX/research-thinking-ai) | Turns a vague research interest into evidence-tiered directions · [live](https://research-thinking-ai.vercel.app) |
+| [**research-thinking-ai**](https://github.com/FelixFangX/research-thinking-ai) | Turns a vague research interest into evidence-tiered directions · [live](https://research.ledring.dev) |
 | [**n8n-workflow-collection**](https://github.com/FelixFangX/n8n-workflow-collection) | Lark/Feishu bot messages → Bitable records and PRD drafts; social metrics tracking |
 | **tech-news-digest** <sub>(private)</sub> | Papers, GitHub Trending and Stack Overflow, ranked to my interests every morning |
-| [**lakeboard-converter**](https://github.com/FelixFangX/lakeboard-converter) | Yuque Lakeboard / XMind → Markdown that agents can read |
+| [**lakeboard-converter**](https://github.com/FelixFangX/lakeboard-converter) | Yuque Lakeboard / XMind → Markdown that agents can read · [live](https://convert.ledring.dev) |
 | [**dev-work-grok-bot-skill**](https://github.com/FelixFangX/dev-work-grok-bot-skill) | A Grok Bot skill that sets up a careful developer assistant: repos, tracker, team chat, preview tests, with a secret/PII checker |
 | [**ledring**](https://github.com/FelixFangX/ledring) | Status lights for my agents: replays many runs as one branch tree with divergence %, and scores how far a run drifted from its instruction. Claude Code + OpenTelemetry GenAI traces |
 
