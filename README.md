@@ -1,4 +1,17 @@
 <!-- Agent Control Room v3. Assets regenerate daily via .github/workflows/control-room.yml -->
+
+I'm a software engineer, writing code for humans and agents. Most of what I build is small and open source: a mind map converter, a research helper, and a game about reviewing what an AI builder does.
+
+| Try it | What it is |
+|---|---|
+| [convert.ledring.dev](https://convert.ledring.dev) | Drop an XMind or Yuque Lakeboard mind map, get Markdown. Runs in the browser, nothing is uploaded. |
+| [lakeboard-converter on npm](https://www.npmjs.com/package/lakeboard-converter) | The same converter as a CLI and a read-only MCP server: `npx -y lakeboard-converter mcp` |
+| [research.ledring.dev](https://research.ledring.dev) | Turns a vague research interest into directions backed by OpenAlex evidence. |
+| [LEDRING Play](https://play.ledring.dev/play/) | Watch an AI builder make a web page and decide what gets through. [Source](https://github.com/FelixFangX/ledring) |
+| [ledring.dev](https://ledring.dev) | My site, in English and 中文. |
+
+[ledring.dev](https://ledring.dev) · [X @ColeFangX](https://x.com/ColeFangX)
+
 <a href="https://github.com/FelixFangX">
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/hero-dark.svg">
