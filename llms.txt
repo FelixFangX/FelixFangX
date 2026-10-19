@@ -2,14 +2,14 @@
 
 > Agent tooling, one pipeline: sources → agent-readable knowledge → tools agents can call (CLI --json, MCP) → an assistant under human control. Every repo has an AGENTS.md.
 
-Status below comes from GitHub Actions and committed eval files, updated 2026-10-18.
+Status below comes from GitHub Actions and committed eval files, updated 2026-10-19.
 
 ## Repos
 
 - tech-news-digest (private repo, no public link or status): Daily ranked digest of papers, repos and Q&A.
-- [lakeboard-converter](https://github.com/FelixFangX/lakeboard-converter): Yuque Lakeboard / XMind mind maps for agents. Agent entry: MCP convert · read --json. Status: CI success 2026-10-18.
+- [lakeboard-converter](https://github.com/FelixFangX/lakeboard-converter): Yuque Lakeboard / XMind mind maps for agents. Agent entry: MCP convert · read --json. Status: CI success 2026-10-19.
 - [n8n-workflow-collection](https://github.com/FelixFangX/n8n-workflow-collection): Lark/Bitable n8n workflows with agent manifests. Agent entry: n8n MCP execute_workflow · manifests --json. Status: CI success 2026-10-16.
-- [research-thinking-ai](https://github.com/FelixFangX/research-thinking-ai): Interest → evidence-tiered research directions. Agent entry: MCP propose_directions, expand · eval --json. Status: CI success 2026-10-18; Weekly research watch success 2026-10-14; citations 100% real, 88% on-topic (n=20).
+- [research-thinking-ai](https://github.com/FelixFangX/research-thinking-ai): Interest → evidence-tiered research directions. Agent entry: MCP propose_directions, expand · eval --json. Status: CI success 2026-10-19; Weekly research watch success 2026-10-19; citations 100% real, 88% on-topic (n=20).
 - [dev-work-grok-bot-skill](https://github.com/FelixFangX/dev-work-grok-bot-skill): Assistant skill with safety rules and a secret/PII checker. Agent entry: SKILL.md · skill-eval --json. Status: CI success 2026-10-14; safety scenarios 20/20.
 
 ## Optional
