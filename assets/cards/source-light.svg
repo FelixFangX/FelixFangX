@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="180" viewBox="0 0 600 180" role="img" aria-labelledby="t d" font-family="ui-sans-serif,-apple-system,'Segoe UI',Inter,Helvetica,Arial,sans-serif">
+<title id="t">05 · SOURCE: FelixFangX/ledring</title>
+<desc id="d">The game and the toolkit behind it: agent traces as branch trees, drift scores. ↗ github.com/FelixFangX/ledring</desc>
+<style>@media (prefers-reduced-motion: reduce){*{animation:none!important}}</style>
+<defs><clipPath id="card"><rect x="0.5" y="0.5" width="599" height="179" rx="10"/></clipPath></defs>
+<g clip-path="url(#card)">
+<rect width="600" height="180" fill="#ffffff"/>
+<rect width="600" height="30" fill="#eef1f5"/>
+<text x="24" y="20" font-family="ui-monospace,SFMono-Regular,'JetBrains Mono',Menlo,Consolas,monospace" font-size="11" letter-spacing="3" fill="#6e7781">05 · SOURCE</text>
+<text x="576" y="20" text-anchor="end" font-family="ui-monospace,SFMono-Regular,'JetBrains Mono',Menlo,Consolas,monospace" font-size="11" fill="#0969da">○ REPO</text>
+<text x="24" y="70" font-family="ui-sans-serif,-apple-system,'Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="28" font-weight="700" fill="#1f2328">FelixFangX/ledring</text>
+<text x="24" y="99" font-size="15" fill="#59636e">The game and the toolkit behind it:</text>
+<text x="24" y="121" font-size="15" fill="#59636e">agent traces as branch trees, drift scores.</text>
+
+<text x="24" y="161" font-family="ui-monospace,SFMono-Regular,'JetBrains Mono',Menlo,Consolas,monospace" font-size="12" fill="#0969da">↗ github.com/FelixFangX/ledring</text>
+</g>
+<rect x="0.5" y="0.5" width="599" height="179" rx="10" fill="none" stroke="#d0d7de" stroke-width="1"/>
+</svg>

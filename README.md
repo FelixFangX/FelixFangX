@@ -1,17 +1,5 @@
 <!-- Agent Control Room v3. Assets regenerate daily via .github/workflows/control-room.yml -->
 
-I'm a software engineer, writing code for humans and agents. Most of what I build is small and open source: a mind map converter, a research helper, and a game about reviewing what an AI builder does.
-
-| Try it | What it is |
-|---|---|
-| [convert.ledring.dev](https://convert.ledring.dev) | Drop an XMind or Yuque Lakeboard mind map, get Markdown. Runs in the browser, nothing is uploaded. |
-| [lakeboard-converter on npm](https://www.npmjs.com/package/lakeboard-converter) | The same converter as a CLI and a read-only MCP server: `npx -y lakeboard-converter mcp` |
-| [research.ledring.dev](https://research.ledring.dev) | Turns a vague research interest into directions backed by OpenAlex evidence. |
-| [LEDRING Play](https://play.ledring.dev/play/) | Watch an AI builder make a web page and decide what gets through. [Source](https://github.com/FelixFangX/ledring) |
-| [ledring.dev](https://ledring.dev) | My site, in English and 中文. |
-
-[ledring.dev](https://ledring.dev) · [X @ColeFangX](https://x.com/ColeFangX)
-
 <a href="https://github.com/FelixFangX">
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/hero-dark.svg">
@@ -26,6 +14,27 @@ I'm a software engineer, writing code for humans and agents. Most of what I buil
 </p>
 
 > Fast software, careful UI, open source, and an iced americano.
+
+## Try it
+
+I write code for humans and agents. Most of it is small and open source: a mind map converter, a research helper, and a game about reviewing what an AI builder does.
+
+<p align="center">
+  <a href="https://convert.ledring.dev"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/cards/convert-dark.svg"><img alt="Convert XMind or Yuque Lakeboard mind maps to Markdown in your browser" src="./assets/cards/convert-light.svg" width="49%"></picture></a>
+  <a href="https://www.npmjs.com/package/lakeboard-converter"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/cards/npm-dark.svg"><img alt="lakeboard-converter: CLI and read-only MCP server" src="./assets/cards/npm-light.svg" width="49%"></picture></a>
+  <br>
+  <a href="https://research.ledring.dev"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/cards/research-dark.svg"><img alt="Research directions backed by OpenAlex evidence" src="./assets/cards/research-light.svg" width="49%"></picture></a>
+  <a href="https://play.ledring.dev/play/"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/cards/play-dark.svg"><img alt="LEDRING Play: review what an AI web page builder does" src="./assets/cards/play-light.svg" width="49%"></picture></a>
+  <br>
+  <a href="https://github.com/FelixFangX/ledring"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/cards/source-dark.svg"><img alt="LEDRING source: agent trace branch trees and drift scores" src="./assets/cards/source-light.svg" width="49%"></picture></a>
+  <a href="https://ledring.dev"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/cards/site-dark.svg"><img alt="ledring.dev: my site in English and 中文" src="./assets/cards/site-light.svg" width="49%"></picture></a>
+</p>
+
+```sh
+npx -y lakeboard-converter mcp
+```
+
+<sub><a href="https://ledring.dev">ledring.dev</a> · <a href="https://x.com/ColeFangX">X @ColeFangX</a></sub>
 
 ## ▶ Flagship: LEDRING
 
