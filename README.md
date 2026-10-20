@@ -85,11 +85,11 @@ A personal memory layer for agents that is **portable** (plain files, any model)
 <!-- agent-log:start -->
 | date&nbsp;(UTC) | repo | latest commit |
 |---|---|---|
-| 2026-10-19 | [lakeboard-converter](https://github.com/FelixFangX/lakeboard-converter) | Merge pull request #23 from FelixFangX/release/0.4.1 |
-| 2026-10-19 | [research-thinking-ai](https://github.com/FelixFangX/research-thinking-ai) | Merge pull request #19 from FelixFangX/docs/live-demo-link |
-| 2026-10-17 | [ledring](https://github.com/FelixFangX/ledring) | Merge pull request #99 from FelixFangX/fix/i18n-strict-bilingual |
+| 2026-10-20 | [research-thinking-ai](https://github.com/FelixFangX/research-thinking-ai) | eval: run llm mode on Workers AI and publish results (#22) |
+| 2026-10-20 | [dev-work-grok-bot-skill](https://github.com/FelixFangX/dev-work-grok-bot-skill) | eval: first model run on Workers AI, 12/20 (#22) |
+| 2026-10-20 | [lakeboard-converter](https://github.com/FelixFangX/lakeboard-converter) | 0.5.0: Markdown to XMind, batch reads and inspect (#26) |
+| 2026-10-20 | [ledring](https://github.com/FelixFangX/ledring) | Read native ledring.trace.v1 files directly (#102) |
 | 2026-10-16 | [n8n-workflow-collection](https://github.com/FelixFangX/n8n-workflow-collection) | feat: split workflows into global (English) and cn (Chinese) editions (# |
-| 2026-10-14 | [dev-work-grok-bot-skill](https://github.com/FelixFangX/dev-work-grok-bot-skill) | docs: README in house style with For agents section (#21) |
 | 2026-04-19 | [llm-resume-platform](https://github.com/FelixFangX/llm-resume-platform) | chore: clean up repo — remove design doc, add bilingual README, standard |
 <!-- agent-log:end -->
 

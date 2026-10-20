@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-19T21:00:09.551Z",
+  "updated": "2026-10-20T19:58:16.196Z",
   "repos": {
     "tech-news-digest": {
       "private": true
@@ -7,7 +7,7 @@
     "lakeboard-converter": {
       "ci": {
         "conclusion": "success",
-        "at": "2026-10-19T14:26:56Z"
+        "at": "2026-10-20T11:57:38Z"
       }
     },
     "n8n-workflow-collection": {
@@ -19,7 +19,7 @@
     "research-thinking-ai": {
       "ci": {
         "conclusion": "success",
-        "at": "2026-10-19T05:19:55Z"
+        "at": "2026-10-20T12:00:26Z"
       },
       "schedule": {
         "name": "Weekly research watch",
@@ -31,7 +31,7 @@
     "dev-work-grok-bot-skill": {
       "ci": {
         "conclusion": "success",
-        "at": "2026-10-14T09:25:51Z"
+        "at": "2026-10-20T12:00:02Z"
       },
       "eval": "safety scenarios 20/20"
     }
