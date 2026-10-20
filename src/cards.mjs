@@ -22,14 +22,14 @@ function renderCard(card, theme) {
     body: `<defs><clipPath id="card"><rect x="0.5" y="0.5" width="599" height="179" rx="10"/></clipPath></defs>
 <g clip-path="url(#card)">
 <rect width="600" height="180" fill="${t.bg}"/>
-<rect width="600" height="30" fill="${t.bar}"/>
-<text x="24" y="20" font-family="${MONO}" font-size="11" letter-spacing="3" fill="${t.barText}">${esc(card.label)}</text>
-<text x="576" y="20" text-anchor="end" font-family="${MONO}" font-size="11" fill="${accent}">${card.id === "source" ? "○ REPO" : "● LIVE"}</text>
-<text x="24" y="70" ${FONT} font-size="28" font-weight="700" fill="${t.text}">${esc(card.title)}</text>
-${card.lines.map((line, i) => `<text x="24" y="${99 + i * 22}" font-size="15" fill="${t.dim}">${esc(line)}</text>`).join("\n")}
-${card.command ? `<rect x="24" y="109" width="552" height="30" rx="5" fill="${t.bar}" stroke="${t.line}"/>
-<text x="36" y="129" font-family="${MONO}" font-size="13" fill="${t.text}">${esc(card.command)}</text>` : ""}
-<text x="24" y="161" font-family="${MONO}" font-size="12" fill="${accent}">${esc(card.foot)}</text>
+<rect width="600" height="34" fill="${t.bar}"/>
+<text x="24" y="23" font-family="${MONO}" font-size="13" letter-spacing="3" fill="${t.barText}">${esc(card.label)}</text>
+<text x="576" y="23" text-anchor="end" font-family="${MONO}" font-size="13" fill="${accent}">${card.id === "source" ? "○ REPO" : "● LIVE"}</text>
+<text x="24" y="73" ${FONT} font-size="32" font-weight="700" fill="${t.text}">${esc(card.title)}</text>
+${card.lines.map((line, i) => `<text x="24" y="${101 + i * 24}" font-size="18" fill="${t.dim}">${esc(line)}</text>`).join("\n")}
+${card.command ? `<rect x="24" y="112" width="552" height="30" rx="5" fill="${t.bar}" stroke="${t.line}"/>
+<text x="36" y="132" font-family="${MONO}" font-size="15" fill="${t.text}">${esc(card.command)}</text>` : ""}
+<text x="24" y="165" font-family="${MONO}" font-size="14" fill="${accent}">${esc(card.foot)}</text>
 </g>
 <rect x="0.5" y="0.5" width="599" height="179" rx="10" fill="none" stroke="${t.line}" stroke-width="1"/>`,
   });

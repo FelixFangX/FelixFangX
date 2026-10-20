@@ -5,14 +5,14 @@
 <defs><clipPath id="card"><rect x="0.5" y="0.5" width="599" height="179" rx="10"/></clipPath></defs>
 <g clip-path="url(#card)">
 <rect width="600" height="180" fill="#ffffff"/>
-<rect width="600" height="30" fill="#eef1f5"/>
-<text x="24" y="20" font-family="ui-monospace,SFMono-Regular,'JetBrains Mono',Menlo,Consolas,monospace" font-size="11" letter-spacing="3" fill="#6e7781">03 · RESEARCH</text>
-<text x="576" y="20" text-anchor="end" font-family="ui-monospace,SFMono-Regular,'JetBrains Mono',Menlo,Consolas,monospace" font-size="11" fill="#0969da">● LIVE</text>
-<text x="24" y="70" font-family="ui-sans-serif,-apple-system,'Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="28" font-weight="700" fill="#1f2328">research.ledring.dev</text>
-<text x="24" y="99" font-size="15" fill="#59636e">Turns a vague research interest into directions</text>
-<text x="24" y="121" font-size="15" fill="#59636e">backed by OpenAlex evidence.</text>
+<rect width="600" height="34" fill="#eef1f5"/>
+<text x="24" y="23" font-family="ui-monospace,SFMono-Regular,'JetBrains Mono',Menlo,Consolas,monospace" font-size="13" letter-spacing="3" fill="#6e7781">03 · RESEARCH</text>
+<text x="576" y="23" text-anchor="end" font-family="ui-monospace,SFMono-Regular,'JetBrains Mono',Menlo,Consolas,monospace" font-size="13" fill="#0969da">● LIVE</text>
+<text x="24" y="73" font-family="ui-sans-serif,-apple-system,'Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="32" font-weight="700" fill="#1f2328">research.ledring.dev</text>
+<text x="24" y="101" font-size="18" fill="#59636e">Turns a vague research interest into directions</text>
+<text x="24" y="125" font-size="18" fill="#59636e">backed by OpenAlex evidence.</text>
 
-<text x="24" y="161" font-family="ui-monospace,SFMono-Regular,'JetBrains Mono',Menlo,Consolas,monospace" font-size="12" fill="#0969da">↗ research.ledring.dev</text>
+<text x="24" y="165" font-family="ui-monospace,SFMono-Regular,'JetBrains Mono',Menlo,Consolas,monospace" font-size="14" fill="#0969da">↗ research.ledring.dev</text>
 </g>
 <rect x="0.5" y="0.5" width="599" height="179" rx="10" fill="none" stroke="#d0d7de" stroke-width="1"/>
 </svg>
