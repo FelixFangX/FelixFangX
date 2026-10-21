@@ -27,7 +27,7 @@ I write code for humans and agents. Most of it is small and open source: a mind 
   <a href="https://play.ledring.dev/play/"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/cards/play-dark.svg"><img alt="LEDRING Play: review what an AI web page builder does" src="./assets/cards/play-light.svg" width="49%"></picture></a>
   <br>
   <a href="https://github.com/FelixFangX/ledring"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/cards/source-dark.svg"><img alt="LEDRING source: agent trace branch trees and drift scores" src="./assets/cards/source-light.svg" width="49%"></picture></a>
-  <a href="https://ledring.dev"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/cards/site-dark.svg"><img alt="ledring.dev: my site in English and 中文" src="./assets/cards/site-light.svg" width="49%"></picture></a>
+  <a href="https://ledring.dev"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/cards/site-dark.svg"><img alt="ledring.dev: my site in English and Chinese (Simplified)" src="./assets/cards/site-light.svg" width="49%"></picture></a>
 </p>
 
 ```sh
@@ -40,7 +40,7 @@ npx -y lakeboard-converter mcp
 
 [![LEDRING Play](https://raw.githubusercontent.com/FelixFangX/ledring/main/docs/assets/play.gif)](https://play.ledring.dev/play/)
 
-**[Play LEDRING in your browser](https://play.ledring.dev/play/)**. You watch an AI builder make a web page and decide what gets through. The free built-in AI needs no key; the game is in English and 中文. Under the hood it is a toolkit that replays agent traces as branch trees and scores how far a run drifted from its instruction. **[Repo →](https://github.com/FelixFangX/ledring)**
+**[Play LEDRING in your browser](https://play.ledring.dev/play/)**. You watch an AI builder make a web page and decide what gets through. The free built-in AI needs no key; the game is in English and Chinese (Simplified). Under the hood it is a toolkit that replays agent traces as branch trees and scores how far a run drifted from its instruction. **[Repo →](https://github.com/FelixFangX/ledring)**
 
 ## The control room
 

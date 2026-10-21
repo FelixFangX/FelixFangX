@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="600" height="180" viewBox="0 0 600 180" role="img" aria-labelledby="t d" font-family="ui-sans-serif,-apple-system,'Segoe UI',Inter,Helvetica,Arial,sans-serif">
 <title id="t">06 · SITE: ledring.dev</title>
-<desc id="d">My site, in English and 中文. ↗ ledring.dev</desc>
+<desc id="d">My site, in English and Chinese (Simplified). ↗ ledring.dev</desc>
 <style>@media (prefers-reduced-motion: reduce){*{animation:none!important}}</style>
 <defs><clipPath id="card"><rect x="0.5" y="0.5" width="599" height="179" rx="10"/></clipPath></defs>
 <g clip-path="url(#card)">
@@ -9,7 +9,7 @@
 <text x="24" y="23" font-family="ui-monospace,SFMono-Regular,'JetBrains Mono',Menlo,Consolas,monospace" font-size="13" letter-spacing="3" fill="#6e7781">06 · SITE</text>
 <text x="576" y="23" text-anchor="end" font-family="ui-monospace,SFMono-Regular,'JetBrains Mono',Menlo,Consolas,monospace" font-size="13" fill="#0969da">● LIVE</text>
 <text x="24" y="73" font-family="ui-sans-serif,-apple-system,'Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="32" font-weight="700" fill="#1f2328">ledring.dev</text>
-<text x="24" y="101" font-size="18" fill="#59636e">My site, in English and 中文.</text>
+<text x="24" y="101" font-size="18" fill="#59636e">My site, in English and Chinese (Simplified).</text>
 
 <text x="24" y="165" font-family="ui-monospace,SFMono-Regular,'JetBrains Mono',Menlo,Consolas,monospace" font-size="14" fill="#0969da">↗ ledring.dev</text>
 </g>

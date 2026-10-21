@@ -8,7 +8,7 @@ const cards = [
   { id: "research", label: "03 · RESEARCH", title: "research.ledring.dev", lines: ["Turns a vague research interest into directions", "backed by OpenAlex evidence."], foot: "↗ research.ledring.dev" },
   { id: "play", label: "04 · GAME", title: "LEDRING Play", lines: ["Watch an AI builder make a web page", "and decide what gets through."], foot: "↗ play.ledring.dev" },
   { id: "source", label: "05 · SOURCE", title: "FelixFangX/ledring", lines: ["The game and the toolkit behind it:", "agent traces as branch trees, drift scores."], foot: "↗ github.com/FelixFangX/ledring" },
-  { id: "site", label: "06 · SITE", title: "ledring.dev", lines: ["My site, in English and 中文."], foot: "↗ ledring.dev" },
+  { id: "site", label: "06 · SITE", title: "ledring.dev", lines: ["My site, in English and Chinese (Simplified)."], foot: "↗ ledring.dev" },
 ];
 
 function renderCard(card, theme) {
