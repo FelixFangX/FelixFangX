@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="470" viewBox="0 0 1200 470" role="img" aria-labelledby="t d" font-family="ui-sans-serif,-apple-system,'Segoe UI',Inter,Helvetica,Arial,sans-serif">
 <title id="t">Live system map: sense, think, act</title>
-<desc id="d">Built from GitHub Actions and committed eval results on 2026-10-24. tech-news-digest: private; lakeboard-converter: CI success · 2026-10-20; n8n-workflow-collection: CI success · 2026-10-16; research-thinking-ai: CI success · 2026-10-20, citations 100% real, 88% on-topic (n=20); dev-work-grok-bot-skill: CI success · 2026-10-20, safety scenarios 20/20</desc>
+<desc id="d">Built from GitHub Actions and committed eval results on 2026-10-25. tech-news-digest: private; lakeboard-converter: CI success · 2026-10-20; n8n-workflow-collection: CI success · 2026-10-16; research-thinking-ai: CI success · 2026-10-20, citations 100% real, 88% on-topic (n=20); dev-work-grok-bot-skill: CI success · 2026-10-20, safety scenarios 20/20</desc>
 <style>.flow{stroke-dasharray:6 8;animation:f 1.4s linear infinite}@keyframes f{to{stroke-dashoffset:-14}}.pulse{animation:p 2.4s ease-in-out infinite}@keyframes p{50%{opacity:.35}}@media (prefers-reduced-motion: reduce){*{animation:none!important}}</style>
 <rect class="bg" width="1200" height="470" fill="#ffffff"/>
 <g transform="translate(0 0)"><text x="0" y="28" fill="#0369a1" font-size="12" font-weight="700" letter-spacing="3">SENSE</text>
@@ -32,5 +32,5 @@
 <text x="20" y="94" fill="#59636e" font-size="12" font-family="ui-monospace,SFMono-Regular,'JetBrains Mono',Menlo,Consolas,monospace">SKILL.md · skill-eval --json</text>
 <text x="20" y="118" fill="#1a7f37" font-size="12.5">CI success · 2026-10-20</text><text x="20" y="136" fill="#1f2328" font-size="12.5">safety scenarios 20/20</text></g></g>
 <line class="flow" x1="344" y1="104" x2="426" y2="104" stroke="#7c3aed" stroke-width="2"/><text x="385" y="94" text-anchor="middle" fill="#59636e" font-size="11">signals</text><line class="flow" x1="774" y1="104" x2="856" y2="104" stroke="#b45309" stroke-width="2"/><text x="815" y="94" text-anchor="middle" fill="#59636e" font-size="11">directions</text>
-<text x="1200" y="460" text-anchor="end" fill="#6e7781" font-size="11" font-family="ui-monospace,SFMono-Regular,'JetBrains Mono',Menlo,Consolas,monospace">live data · GitHub Actions + committed evals · updated 2026-10-24</text>
+<text x="1200" y="460" text-anchor="end" fill="#6e7781" font-size="11" font-family="ui-monospace,SFMono-Regular,'JetBrains Mono',Menlo,Consolas,monospace">live data · GitHub Actions + committed evals · updated 2026-10-25</text>
 </svg>
