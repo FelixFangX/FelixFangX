@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-25T18:57:03.913Z",
+  "updated": "2026-10-26T20:59:24.698Z",
   "repos": {
     "tech-news-digest": {
       "private": true
@@ -24,7 +24,7 @@
       "schedule": {
         "name": "Weekly research watch",
         "conclusion": "success",
-        "at": "2026-10-19T05:58:17Z"
+        "at": "2026-10-26T05:57:51Z"
       },
       "eval": "citations 100% real, 88% on-topic (n=20)"
     },
