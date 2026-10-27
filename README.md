@@ -88,12 +88,12 @@ A personal memory layer for agents that is **portable** (plain files, any model)
 <!-- agent-log:start -->
 | date&nbsp;(UTC) | repo | latest commit |
 |---|---|---|
+| 2026-10-27 | [maptaste](https://github.com/FelixFangX/maptaste) | fix(geocode): swap deprecated llama-3.1-8b for fp8 + OpenAI-shaped parse |
+| 2026-10-27 | [dev-work-grok-bot-skill](https://github.com/FelixFangX/dev-work-grok-bot-skill) | Merge pull request #24 from FelixFangX/docs/role-packs-lark-auth |
 | 2026-10-26 | [dashtaste](https://github.com/FelixFangX/dashtaste) | docs(cases): add finance and live gallery walkthroughs (#2) |
 | 2026-10-23 | [ledring](https://github.com/FelixFangX/ledring) | feat(play-strands): add GET / and /health discovery for api.ledring.dev |
 | 2026-10-20 | [research-thinking-ai](https://github.com/FelixFangX/research-thinking-ai) | eval: run llm mode on Workers AI and publish results (#22) |
-| 2026-10-20 | [dev-work-grok-bot-skill](https://github.com/FelixFangX/dev-work-grok-bot-skill) | eval: first model run on Workers AI, 12/20 (#22) |
 | 2026-10-20 | [lakeboard-converter](https://github.com/FelixFangX/lakeboard-converter) | 0.5.0: Markdown to XMind, batch reads and inspect (#26) |
-| 2026-10-16 | [n8n-workflow-collection](https://github.com/FelixFangX/n8n-workflow-collection) | feat: split workflows into global (English) and cn (Chinese) editions (# |
 <!-- agent-log:end -->
 
 <details>
