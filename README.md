@@ -17,7 +17,7 @@
 
 ## Try it
 
-I write code for humans and agents. Most of it is small and open source: a mind map converter, a research helper, and a game about reviewing what an AI builder does.
+I write code for humans and agents. Most of it is small and open source: maptaste for MapLibre styles, a mind map converter, a research helper, and a game about reviewing what an AI builder does.
 
 <p align="center">
   <a href="https://convert.ledring.dev"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/cards/convert-dark.svg"><img alt="Convert XMind or Yuque Lakeboard mind maps to Markdown in your browser" src="./assets/cards/convert-light.svg" width="49%"></picture></a>
@@ -36,7 +36,13 @@ npx -y lakeboard-converter mcp
 
 <sub><a href="https://ledring.dev">ledring.dev</a> · <a href="https://x.com/ColeFangX">X @ColeFangX</a></sub>
 
-## ▶ Flagship: LEDRING
+## ▶ Flagship: maptaste
+
+[![maptaste demo](https://raw.githubusercontent.com/FelixFangX/maptaste/main/docs/demo.gif)](https://github.com/FelixFangX/maptaste#demo)
+
+MapLibre style taste for coding agents. The check CLI covers MT001–MT004, with global/cn skill packs and MCP tools `check_taste`, `validate_style`, and `preview_info`. A cinematic Before/After showcase runs on real OpenFreeMap SF buildings. **[Repo →](https://github.com/FelixFangX/maptaste)**
+
+## ▶ Also shipping: LEDRING
 
 [![LEDRING Play](https://raw.githubusercontent.com/FelixFangX/ledring/main/docs/assets/play.gif)](https://play.ledring.dev/play/)
 
@@ -54,6 +60,7 @@ My agents run the repetitive parts of work and life. I stay in the loop where ju
 | Agent layer | What it takes off my plate |
 |---|---|
 | [**research-thinking-ai**](https://github.com/FelixFangX/research-thinking-ai) | Turns a vague research interest into evidence-tiered directions · [live](https://research.ledring.dev) |
+| [**maptaste**](https://github.com/FelixFangX/maptaste) | MapLibre style check + skill packs + MCP + showcase · [GitHub](https://github.com/FelixFangX/maptaste) |
 | [**n8n-workflow-collection**](https://github.com/FelixFangX/n8n-workflow-collection) | Lark/Feishu bot messages → Bitable records and PRD drafts; social metrics tracking |
 | **tech-news-digest** <sub>(private)</sub> | Papers, GitHub Trending and Stack Overflow, ranked to my interests every morning |
 | [**lakeboard-converter**](https://github.com/FelixFangX/lakeboard-converter) | Yuque Lakeboard / XMind → Markdown that agents can read · [live](https://convert.ledring.dev) |
