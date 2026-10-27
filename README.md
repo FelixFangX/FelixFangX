@@ -38,13 +38,9 @@ npx -y lakeboard-converter mcp
 
 ## ▶ Flagship: maptaste
 
-[![maptaste demo](https://raw.githubusercontent.com/FelixFangX/maptaste/main/docs/demo.gif)](https://github.com/FelixFangX/maptaste#demo)
-
-MapLibre style taste for coding agents. The check CLI covers MT001–MT004, with global/cn skill packs and MCP tools `check_taste`, `validate_style`, and `preview_info`. A cinematic Before/After showcase runs on real OpenFreeMap SF buildings. **[Repo →](https://github.com/FelixFangX/maptaste)**
+MapLibre style taste for coding agents. The check CLI covers MT001–MT004, with global/cn skill packs and MCP tools `check_taste`, `validate_style`, and `preview_info`. A cinematic Before/After showcase runs on real OpenFreeMap SF buildings. **[Repo →](https://github.com/FelixFangX/maptaste)** · **[Demo →](https://github.com/FelixFangX/maptaste#demo)**
 
 ## ▶ Also shipping: LEDRING
-
-[![LEDRING Play](https://raw.githubusercontent.com/FelixFangX/ledring/main/docs/assets/play.gif)](https://play.ledring.dev/play/)
 
 **[Play LEDRING in your browser](https://play.ledring.dev/play/)**. You watch an AI builder make a web page and decide what gets through. The free built-in AI needs no key; the game is in English and Chinese (Simplified). Under the hood it is a toolkit that replays agent traces as branch trees and scores how far a run drifted from its instruction. **[Repo →](https://github.com/FelixFangX/ledring)**
 
