@@ -88,12 +88,12 @@ A personal memory layer for agents that is **portable** (plain files, any model)
 <!-- agent-log:start -->
 | date&nbsp;(UTC) | repo | latest commit |
 |---|---|---|
-| 2026-10-27 | [maptaste](https://github.com/FelixFangX/maptaste) | fix(geocode): swap deprecated llama-3.1-8b for fp8 + OpenAI-shaped parse |
+| 2026-10-29 | [ledring.dev](https://github.com/FelixFangX/ledring.dev) | Merge pull request #18 from FelixFangX/feat/impeccable-subpages |
+| 2026-10-29 | [dashtaste](https://github.com/FelixFangX/dashtaste) | Merge pull request #3 from FelixFangX/feat/impeccable-gallery-polish |
+| 2026-10-29 | [maptaste](https://github.com/FelixFangX/maptaste) | Merge pull request #1 from FelixFangX/style/impeccable-polish-pass |
+| 2026-10-29 | [lakeboard-converter](https://github.com/FelixFangX/lakeboard-converter) | Merge pull request #27 from FelixFangX/style/impeccable-polish-pass |
+| 2026-10-29 | [research-thinking-ai](https://github.com/FelixFangX/research-thinking-ai) | Merge pull request #23 from FelixFangX/style/impeccable-polish-pass |
 | 2026-10-27 | [dev-work-grok-bot-skill](https://github.com/FelixFangX/dev-work-grok-bot-skill) | Merge pull request #24 from FelixFangX/docs/role-packs-lark-auth |
-| 2026-10-26 | [dashtaste](https://github.com/FelixFangX/dashtaste) | docs(cases): add finance and live gallery walkthroughs (#2) |
-| 2026-10-20 | [research-thinking-ai](https://github.com/FelixFangX/research-thinking-ai) | eval: run llm mode on Workers AI and publish results (#22) |
-| 2026-10-20 | [lakeboard-converter](https://github.com/FelixFangX/lakeboard-converter) | 0.5.0: Markdown to XMind, batch reads and inspect (#26) |
-| 2026-10-16 | [n8n-workflow-collection](https://github.com/FelixFangX/n8n-workflow-collection) | feat: split workflows into global (English) and cn (Chinese) editions (# |
 <!-- agent-log:end -->
 
 <details>
