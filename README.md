@@ -88,12 +88,12 @@ A personal memory layer for agents that is **portable** (plain files, any model)
 <!-- agent-log:start -->
 | date&nbsp;(UTC) | repo | latest commit |
 |---|---|---|
-| 2026-10-29 | [ledring.dev](https://github.com/FelixFangX/ledring.dev) | Merge pull request #18 from FelixFangX/feat/impeccable-subpages |
-| 2026-10-29 | [dashtaste](https://github.com/FelixFangX/dashtaste) | Merge pull request #3 from FelixFangX/feat/impeccable-gallery-polish |
-| 2026-10-29 | [maptaste](https://github.com/FelixFangX/maptaste) | Merge pull request #1 from FelixFangX/style/impeccable-polish-pass |
-| 2026-10-29 | [lakeboard-converter](https://github.com/FelixFangX/lakeboard-converter) | Merge pull request #27 from FelixFangX/style/impeccable-polish-pass |
-| 2026-10-29 | [research-thinking-ai](https://github.com/FelixFangX/research-thinking-ai) | Merge pull request #23 from FelixFangX/style/impeccable-polish-pass |
-| 2026-10-27 | [dev-work-grok-bot-skill](https://github.com/FelixFangX/dev-work-grok-bot-skill) | Merge pull request #24 from FelixFangX/docs/role-packs-lark-auth |
+| 2026-10-30 | [ledring.dev](https://github.com/FelixFangX/ledring.dev) | Merge pull request #20 from FelixFangX/feat/apex-view-transitions |
+| 2026-10-30 | [dashtaste](https://github.com/FelixFangX/dashtaste) | Merge pull request #4 from FelixFangX/feat/blend-fold |
+| 2026-10-30 | [lakeboard-converter](https://github.com/FelixFangX/lakeboard-converter) | Merge pull request #28 from FelixFangX/feat/blend-fold |
+| 2026-10-30 | [ledring](https://github.com/FelixFangX/ledring) | Merge pull request #104 from FelixFangX/feat/blend-fold-play |
+| 2026-10-30 | [research-thinking-ai](https://github.com/FelixFangX/research-thinking-ai) | Merge pull request #24 from FelixFangX/feat/blend-fold |
+| 2026-10-30 | [maptaste](https://github.com/FelixFangX/maptaste) | Merge pull request #2 from FelixFangX/feat/blend-fold |
 <!-- agent-log:end -->
 
 <details>
