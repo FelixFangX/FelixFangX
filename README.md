@@ -60,10 +60,10 @@ The Action still draws these. The map uses real GitHub Actions runs and committe
 <!-- agent-log:start -->
 | date&nbsp;(UTC) | repo | latest commit |
 |---|---|---|
-| 2026-10-30 | [ledring.dev](https://github.com/FelixFangX/ledring.dev) | Merge pull request #20 from FelixFangX/feat/apex-view-transitions |
-| 2026-10-30 | [dashtaste](https://github.com/FelixFangX/dashtaste) | Merge pull request #4 from FelixFangX/feat/blend-fold |
-| 2026-10-30 | [lakeboard-converter](https://github.com/FelixFangX/lakeboard-converter) | Merge pull request #28 from FelixFangX/feat/blend-fold |
-| 2026-10-30 | [ledring](https://github.com/FelixFangX/ledring) | Merge pull request #104 from FelixFangX/feat/blend-fold-play |
-| 2026-10-30 | [research-thinking-ai](https://github.com/FelixFangX/research-thinking-ai) | Merge pull request #24 from FelixFangX/feat/blend-fold |
-| 2026-10-30 | [maptaste](https://github.com/FelixFangX/maptaste) | Merge pull request #2 from FelixFangX/feat/blend-fold |
+| 2026-11-03 | [lakeboard-converter](https://github.com/FelixFangX/lakeboard-converter) | Read popular mind maps as Markdown (#31) |
+| 2026-11-03 | [dashtaste](https://github.com/FelixFangX/dashtaste) | Check named dashboard tastes instead of one shared palette (#6) |
+| 2026-11-03 | [maptaste](https://github.com/FelixFangX/maptaste) | Named tastes are plates, not a shared palette (#5) |
+| 2026-11-03 | [dev-work-grok-bot-skill](https://github.com/FelixFangX/dev-work-grok-bot-skill) | Position the skill as a harness and add optional 2026 practice (#26) |
+| 2026-11-03 | [ledring](https://github.com/FelixFangX/ledring) | Publish-ready ledring package for the public Beta (#109) |
+| 2026-11-03 | [n8n-workflow-collection](https://github.com/FelixFangX/n8n-workflow-collection) | docs: note lark-cli and Grok Bot reduce need for these n8n flows |
 <!-- agent-log:end -->
