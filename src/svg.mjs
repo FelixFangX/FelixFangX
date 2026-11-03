@@ -71,18 +71,16 @@ export function renderHero({ scene, theme, motifs = {}, data = {} }) {
   const facts = [data.latestRepo && `last push → ${data.latestRepo}`, data.publicRepos != null && `${data.publicRepos} public repos`].filter(Boolean).join("   ·   ");
   return svg({
     w: 1200, h: 360,
-    title: `Felix Fang — Agent Control Room. Today's scene: ${scene.label}.`,
-    desc: `Wide cinematic banner. Felix Fang, engineer: agents run the ops, I keep the judgment. Building Become Human, portable and correctable memory for agents. Scene art: ${scene.label}.`,
+    title: `Felix Fang. Today's scene: ${scene.label}.`,
+    desc: `Daily banner for Felix Fang. My agents run the ops. I keep the judgment. Scene art: ${scene.label}. ${scene.line}`,
     style: ART_STYLE + (motifs.cat ? CAT_STYLE : "") + `.cursor{animation:blink 1s steps(1) infinite}@keyframes blink{50%{opacity:0}}`,
     body: `<rect class="bg" width="1200" height="360" fill="${t.bg}"/>
 <rect width="1200" height="30" fill="${t.bar}"/><rect y="330" width="1200" height="30" fill="${t.bar}"/>
-<text x="40" y="20" fill="${t.barText}" font-size="11" letter-spacing="3" font-family="${MONO}">AGENT CONTROL ROOM · SCENE ${SCENES.indexOf(scene) + 1}/${SCENES.length} · <tspan fill="${t.text}">${esc(scene.label.toUpperCase())}</tspan></text>
+<text x="40" y="20" fill="${t.barText}" font-size="11" letter-spacing="3" font-family="${MONO}">SCENE ${SCENES.indexOf(scene) + 1}/${SCENES.length} · <tspan fill="${t.text}">${esc(scene.label.toUpperCase())}</tspan></text>
 <text x="1160" y="20" text-anchor="end" font-size="11" letter-spacing="3" font-family="${MONO}">${["focus", "recovery", "fun"].map((m) => `<tspan fill="${m === scene.mode ? a : t.barText}">${m === scene.mode ? "●" : "○"} ${m.toUpperCase()}</tspan>`).join("<tspan>   </tspan>")}</text>
-<text x="56" y="88" fill="${a}" font-size="13" font-weight="600" letter-spacing="4">ENGINEER · AGENT BUILDER · HEAVY USER</text>
-<text x="54" y="146" fill="${t.text}" font-size="54" font-weight="800" letter-spacing="-1">Felix Fang</text>
-<text x="56" y="186" fill="${t.text}" font-size="22" font-weight="500">Agents run the ops. I keep the judgment.</text>
-<text x="56" y="216" fill="${t.dim}" font-size="15">Building <tspan fill="${t.text}" font-weight="600">Become Human</tspan>: portable, private, correctable memory for agents.</text>
-<text x="56" y="246" fill="${t.dim}" font-size="15" font-style="italic">“${esc(scene.line)}”</text>
+<text x="54" y="150" fill="${t.text}" font-size="54" font-weight="800" letter-spacing="-1">Felix Fang</text>
+<text x="56" y="198" fill="${t.text}" font-size="22" font-weight="500">My agents run the ops. I keep the judgment.</text>
+<text x="56" y="236" fill="${t.dim}" font-size="15" font-style="italic">“${esc(scene.line)}”</text>
 <text x="56" y="300" fill="${t.dim}" font-size="13" font-family="${MONO}"><tspan fill="${a}">$</tspan> ${esc(facts)} <tspan class="cursor" fill="${a}">▍</tspan></text>
 <g transform="translate(720 56)">${ART[scene.id](a, t)}</g>
 ${motifs.cat ? CAT(t.barText) : ""}`,

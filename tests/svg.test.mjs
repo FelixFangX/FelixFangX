@@ -23,6 +23,12 @@ test("dark and light variants differ in background", () => {
 test("hero only shows real data it was given", () => {
   assert.match(renderHero({ scene: SCENES[0], theme: "dark", motifs: {}, data }), /tech-news-digest/);
 });
+test("hero is one thesis, not a slogan stack", () => {
+  const svg = renderHero({ scene: SCENES[0], theme: "dark", motifs: {}, data });
+  assert.match(svg, /My agents run the ops\. I keep the judgment\./);
+  assert.match(svg, new RegExp(SCENES[0].line));
+  assert.doesNotMatch(svg, /Become Human|AGENT CONTROL ROOM|ENGINEER · AGENT BUILDER|portable, private/);
+});
 test("panels render well-formed svg for both themes", () => {
   for (const theme of ["dark", "light"])
     for (const svg of [renderLayers({ theme }), renderPrinciples({ theme }), renderBrew({ theme, stage: 1 })])
