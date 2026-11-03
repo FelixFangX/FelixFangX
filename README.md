@@ -1,4 +1,13 @@
-# Felix Fang
+<!-- Hero SVGs and the agent log regenerate daily via .github/workflows/control-room.yml -->
+
+<a href="https://github.com/FelixFangX">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/hero-dark.svg">
+  <img alt="Felix Fang — Agent Control Room. Agents run the ops, I keep the judgment. Building Become Human: portable, private, correctable memory for agents. The banner scene changes every day." src="./assets/hero-light.svg" width="100%">
+</picture>
+</a>
+
+<sub>The banner scene rotates daily across focus, recovery, and fun. Scene art is animated (drawing traces, equalizer, dialogue, breathing rings, a walking cat, a blinking cursor). The daily Action rewrites <code>assets/hero-light.svg</code> and <code>assets/hero-dark.svg</code>.</sub>
 
 > Fast software, careful UI, open source, and an iced americano.
 
