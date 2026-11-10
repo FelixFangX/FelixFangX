@@ -7,10 +7,10 @@ Status below comes from GitHub Actions and committed eval files, updated 2026-11
 ## Repos
 
 - tech-news-digest (private repo, no public link or status): Daily ranked digest of papers, repos and Q&A.
-- [lakeboard-converter](https://github.com/FelixFangX/lakeboard-converter): Yuque Lakeboard / XMind mind maps for agents. Agent entry: MCP convert · read --json. Status: CI success 2026-11-03.
-- [n8n-workflow-collection](https://github.com/FelixFangX/n8n-workflow-collection): Lark/Bitable n8n workflows with agent manifests. Agent entry: n8n MCP execute_workflow · manifests --json. Status: CI success 2026-11-03.
+- [lakeboard-converter](https://github.com/FelixFangX/lakeboard-converter): Yuque Lakeboard / XMind mind maps for agents. Agent entry: MCP convert · read --json. Status: CI success 2026-11-10.
+- [n8n-workflow-collection](https://github.com/FelixFangX/n8n-workflow-collection): Lark/Bitable n8n workflows with agent manifests. Agent entry: n8n MCP execute_workflow · manifests --json. Status: CI success 2026-11-10.
 - [research-thinking-ai](https://github.com/FelixFangX/research-thinking-ai): Interest → evidence-tiered research directions. Agent entry: MCP propose_directions, expand · eval --json. Status: CI no data.
-- [dev-work-grok-bot-skill](https://github.com/FelixFangX/dev-work-grok-bot-skill): Assistant skill with safety rules and a secret/PII checker. Agent entry: SKILL.md · skill-eval --json. Status: CI success 2026-11-03; safety scenarios 36/36.
+- [dev-work-grok-bot-skill](https://github.com/FelixFangX/dev-work-grok-bot-skill): Assistant skill with safety rules and a secret/PII checker. Agent entry: SKILL.md · skill-eval --json. Status: CI success 2026-11-10; safety scenarios 42/42.
 
 ## Optional
 

@@ -60,10 +60,10 @@ The Action still draws these. The map uses real GitHub Actions runs and committe
 <!-- agent-log:start -->
 | date&nbsp;(UTC) | repo | latest commit |
 |---|---|---|
-| 2026-11-03 | [lakeboard-converter](https://github.com/FelixFangX/lakeboard-converter) | Read popular mind maps as Markdown (#31) |
-| 2026-11-03 | [dashtaste](https://github.com/FelixFangX/dashtaste) | Check named dashboard tastes instead of one shared palette (#6) |
-| 2026-11-03 | [maptaste](https://github.com/FelixFangX/maptaste) | Named tastes are plates, not a shared palette (#5) |
-| 2026-11-03 | [dev-work-grok-bot-skill](https://github.com/FelixFangX/dev-work-grok-bot-skill) | Position the skill as a harness and add optional 2026 practice (#26) |
-| 2026-11-03 | [ledring](https://github.com/FelixFangX/ledring) | Publish-ready ledring package for the public Beta (#109) |
-| 2026-11-03 | [n8n-workflow-collection](https://github.com/FelixFangX/n8n-workflow-collection) | docs: note lark-cli and Grok Bot reduce need for these n8n flows |
+| 2026-11-10 | [maptaste](https://github.com/FelixFangX/maptaste) | Merge pull request #7 from FelixFangX/feature/release-0-0-2-c8f6 |
+| 2026-11-10 | [lakeboard-converter](https://github.com/FelixFangX/lakeboard-converter) | Merge pull request #33 from FelixFangX/feature/release-0-6-0-6b77 |
+| 2026-11-10 | [n8n-workflow-collection](https://github.com/FelixFangX/n8n-workflow-collection) | Merge pull request #1 from FelixFangX/feature/import-preflight-aff8 |
+| 2026-11-10 | [dev-work-grok-bot-skill](https://github.com/FelixFangX/dev-work-grok-bot-skill) | Merge pull request #27 from FelixFangX/feature/exact-approval-fixtures-0 |
+| 2026-11-10 | [dashtaste](https://github.com/FelixFangX/dashtaste) | Merge pull request #7 from FelixFangX/feature/rules-taste-pack-bb1c |
+| 2026-11-10 | [ledring](https://github.com/FelixFangX/ledring) | Merge pull request #110 from FelixFangX/feature/evidence-review-0c5b |
 <!-- agent-log:end -->
