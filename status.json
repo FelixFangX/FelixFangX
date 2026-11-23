@@ -1,28 +1,49 @@
 {
-  "updated": "2026-11-22T21:42:22.320Z",
+  "updated": "2026-11-23T04:11:13.947Z",
   "repos": {
-    "tech-news-digest": {
-      "private": true
+    "ledring": {
+      "ci": {
+        "name": "CI",
+        "conclusion": "success",
+        "at": "2026-11-10T17:04:23Z"
+      }
+    },
+    "maptaste": {
+      "ci": {
+        "name": "check",
+        "conclusion": "success",
+        "at": "2026-11-10T17:11:06Z"
+      }
+    },
+    "dashtaste": {
+      "ci": {
+        "name": "CI",
+        "conclusion": "success",
+        "at": "2026-11-10T17:02:27Z"
+      }
     },
     "lakeboard-converter": {
       "ci": {
+        "name": "CI",
         "conclusion": "success",
         "at": "2026-11-10T17:10:24Z"
       }
     },
+    "dev-work-grok-bot-skill": {
+      "ci": {
+        "name": "CI",
+        "conclusion": "success",
+        "at": "2026-11-10T17:02:17Z"
+      },
+      "eval": "rule strings 42/42 (file check, not a model test)"
+    },
     "n8n-workflow-collection": {
       "ci": {
+        "name": "CI",
         "conclusion": "success",
         "at": "2026-11-10T17:02:15Z"
       }
     },
-    "research-thinking-ai": {},
-    "dev-work-grok-bot-skill": {
-      "ci": {
-        "conclusion": "success",
-        "at": "2026-11-10T17:02:17Z"
-      },
-      "eval": "safety scenarios 42/42"
-    }
+    "ledring.dev": {}
   }
 }
