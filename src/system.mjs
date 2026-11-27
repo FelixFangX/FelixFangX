@@ -1,34 +1,32 @@
-// Live system map + llms.txt, built only from real GitHub data (Actions runs, committed eval files).
+// Public-repo snapshot for llms.txt, status.json, and the live status map.
+// Curated active public repos only. Private repos are never queried or linked.
 import { THEMES, MONO } from "./theme.mjs";
 import { svg, esc } from "./svg.mjs";
 
 export const SYSTEM = {
   nodes: [
-    { repo: "tech-news-digest", layer: "sense", private: true, what: "Daily ranked digest of papers, repos and Q&A", entry: "MCP get_digest · digest_cli.py --json",
-      schedule: { file: "daily-digest.yml", name: "Daily Tech News Digest" }, eval: { file: "evals/results-feedback.json", fmt: (j) => `feedback P@3 ${f2(j.baseline_precision_at_k)}→${f2(j.feedback_precision_at_k)} (${j.reader})` } },
-    { repo: "lakeboard-converter", layer: "sense", what: "Yuque Lakeboard / XMind mind maps for agents", entry: "MCP convert · read --json" },
-    { repo: "n8n-workflow-collection", layer: "sense", what: "Lark/Bitable n8n workflows with agent manifests", entry: "n8n MCP execute_workflow · manifests --json" },
-    { repo: "research-thinking-ai", layer: "think", what: "Interest → evidence-tiered research directions", entry: "MCP propose_directions, expand · eval --json",
-      schedule: { file: "weekly-watch.yml", name: "Weekly research watch" }, eval: { file: "evals/results-openalex.json", fmt: (j) => `citations ${Math.round(j.meanCitationVerifiedRate * 100)}% real` + (j.meanEvidenceOnTopicRate != null ? `, ${Math.round(j.meanEvidenceOnTopicRate * 100)}% on-topic` : "") + ` (n=${j.count})` } },
-    { repo: "dev-work-grok-bot-skill", layer: "act", what: "Assistant skill with safety rules and a secret/PII checker", entry: "SKILL.md · skill-eval --json",
-      eval: { file: "evals/results-coverage.json", fmt: (j) => `safety scenarios ${j.passed}/${j.total}` } },
+    { repo: "maptaste", what: "Stop agents shipping rainbow MapLibre choropleths.", entry: "npx maptaste check style.json --taste ink-paper" },
+    { repo: "dashtaste", what: "Stop agents shipping rainbow ECharts dashboards.", entry: "npx dashtaste check dashboard.json --taste saas-dense" },
+    { repo: "ledring", what: "Review AI builders like a game: watch the branch tree, catch instruction drift.", entry: "play.ledring.dev/play/ · npm i -g ledring@beta" },
+    { repo: "lakeboard-converter", what: "Mind maps your agents can actually read — 9 formats → Markdown.", entry: "convert.ledring.dev · npx -y lakeboard-converter mcp" },
+    { repo: "dev-work-grok-bot-skill", what: "Turn a Grok Bot into a safe work assistant for your product.", entry: "skills/dev-work-bot-setup/SKILL.md · skill-eval",
+      eval: { file: "evals/results-coverage.json", fmt: (j) => `rule strings ${j.passed}/${j.total} (file check)` } },
+    { repo: "ledring.dev", what: "ledring.dev — studio home, notes, and interactive tools.", entry: "https://ledring.dev" },
   ],
-  edges: [["sense", "think", "signals"], ["think", "act", "directions"]],
 };
-const f2 = (n) => (typeof n === "number" ? n.toFixed(2) : "?");
 
 /** gh(path) -> parsed JSON from api.github.com. Each repo degrades to {} on error. */
-export async function collectStatus(gh, owner, now = () => new Date().toISOString()) {
+export async function collectStatus(gh, owner, now = () => new Date().toISOString(), nodes = SYSTEM.nodes, branches = new Map()) {
   const repos = {};
-  for (const n of SYSTEM.nodes) {
+  for (const n of nodes) {
     const s = {};
     // Private repos: never queried, never linked, no status published.
     if (n.private) { repos[n.repo] = { private: true }; continue; }
     try {
-      const info = await gh(`/repos/${owner}/${n.repo}`);
-      const runs = await gh(`/repos/${owner}/${n.repo}/actions/runs?branch=${info.default_branch}&event=push&per_page=20`);
-      const ci = runs.workflow_runs?.find((r) => r.name === "CI" && r.conclusion);
-      if (ci) s.ci = { conclusion: ci.conclusion, at: ci.updated_at };
+      const branch = branches.get(n.repo) ?? (await gh(`/repos/${owner}/${n.repo}`)).default_branch;
+      const runs = await gh(`/repos/${owner}/${n.repo}/actions/runs?branch=${branch}&event=push&per_page=20`);
+      const ci = runs.workflow_runs?.find((r) => /^(ci|check)$/i.test(r.name || "") && r.conclusion);
+      if (ci) s.ci = { name: ci.name, conclusion: ci.conclusion, at: ci.updated_at };
     } catch { /* no data */ }
     if (n.schedule) {
       try {
@@ -48,74 +46,78 @@ export async function collectStatus(gh, owner, now = () => new Date().toISOStrin
 }
 
 const day = (iso) => (iso ? iso.slice(0, 10) : "");
-const ciLabel = (s) => (s?.ci ? `CI ${s.ci.conclusion} · ${day(s.ci.at)}` : "CI no data");
+const ciLabel = (s) => (s?.ci ? `${s.ci.name || "CI"} ${s.ci.conclusion} · ${day(s.ci.at)}` : "CI no data");
 
-export function renderSystemMap({ theme, status }) {
+export function renderSystemMap({ theme, status, nodes = SYSTEM.nodes }) {
   const t = THEMES[theme];
   const ok = theme === "dark" ? "#3fb950" : "#1a7f37", bad = theme === "dark" ? "#f85149" : "#cf222e";
-  const accent = { sense: theme === "dark" ? "#38bdf8" : "#0369a1", think: theme === "dark" ? "#a78bfa" : "#7c3aed", act: theme === "dark" ? "#fbbf24" : "#b45309" };
-  const cols = { sense: 0, think: 430, act: 860 };
-  const heads = { sense: "SENSE", think: "THINK", act: "ACT" };
   const color = (c) => (c === "success" ? ok : c ? bad : t.dim);
-  const H = 470;
-  const nodes = Object.keys(cols).map((layer) => {
-    const list = SYSTEM.nodes.filter((n) => n.layer === layer);
-    return `<g transform="translate(${cols[layer]} 0)"><text x="0" y="28" fill="${accent[layer]}" font-size="12" font-weight="700" letter-spacing="3">${heads[layer]}</text>
-${list.map((n, i) => {
-  const s = status.repos?.[n.repo] ?? {};
-  const y = 44 + i * 132;
-  const lines = n.private ? [["private repo", t.dim], ["status not published", t.dim]] : [
-    [ciLabel(s), color(s.ci?.conclusion)],
-    s.schedule ? [`${s.schedule.name}: ${s.schedule.conclusion} · ${day(s.schedule.at)}`, color(s.schedule.conclusion)] : null,
-    [s.eval ?? (n.eval ? "eval no data" : "tests in CI, no eval yet"), s.eval ? t.text : t.dim],
-  ].filter(Boolean);
-  return `<g data-repo="${n.repo}" data-ci="${n.private ? "private" : s.ci?.conclusion ?? "unknown"}"><rect x="0" y="${y}" width="340" height="120" rx="12" fill="${t.panel}" stroke="${t.line}"/>
-<circle cx="22" cy="${y + 24}" r="6" fill="${color(s.ci?.conclusion)}"${s.ci?.conclusion === "success" ? ' class="pulse"' : ""}/>
-<text x="38" y="${y + 29}" fill="${t.text}" font-size="16" font-weight="600">${esc(n.repo)}</text>
-<text x="20" y="${y + 50}" fill="${t.dim}" font-size="12" font-family="${MONO}">${esc(n.entry)}</text>
-${lines.map(([txt, c], k) => `<text x="20" y="${y + 74 + k * 18}" fill="${c}" font-size="12.5">${esc(txt)}</text>`).join("")}</g>`;
-}).join("\n")}</g>`;
+  const cols = nodes.length === 1 ? 1 : 2;
+  const colW = cols === 1 ? 1160 : 588;
+  const gap = 24;
+  const rowH = 128;
+  const rows = Math.max(1, Math.ceil(nodes.length / cols));
+  const H = 16 + rows * rowH + 28;
+  const body = nodes.map((n, i) => {
+    const s = status.repos?.[n.repo] ?? {};
+    const x = (i % cols) * (colW + gap);
+    const y = 16 + Math.floor(i / cols) * rowH;
+    const lines = n.private ? [["private repo", t.dim], ["status not published", t.dim]] : [
+      [ciLabel(s), color(s.ci?.conclusion)],
+      s.schedule ? [`${s.schedule.name}: ${s.schedule.conclusion} · ${day(s.schedule.at)}`, color(s.schedule.conclusion)] : null,
+      s.eval ? [s.eval, t.text] : (n.eval ? ["eval no data", t.dim] : null),
+    ].filter(Boolean);
+    const ciAttr = n.private ? "private" : s.ci?.conclusion ?? "unknown";
+    return `<g data-repo="${n.repo}" data-ci="${ciAttr}" transform="translate(${x} ${y})"><rect x="0" y="0" width="${colW}" height="116" rx="12" fill="${t.panel}" stroke="${t.line}"/>
+<circle cx="22" cy="26" r="6" fill="${color(s.ci?.conclusion)}"${s.ci?.conclusion === "success" ? ' class="pulse"' : ""}/>
+<text x="40" y="31" fill="${t.text}" font-size="16" font-weight="600">${esc(n.repo)}</text>
+<text x="22" y="54" fill="${t.dim}" font-size="12.5" font-family="${MONO}">${esc(n.entry)}</text>
+${lines.map(([txt, c], k) => `<text x="22" y="${78 + k * 18}" fill="${c}" font-size="12.5">${esc(txt)}</text>`).join("")}</g>`;
   }).join("\n");
-  const flows = SYSTEM.edges.map(([a, b, label]) => {
-    const x1 = cols[a] + 340, x2 = cols[b];
-    return `<line class="flow" x1="${x1 + 4}" y1="104" x2="${x2 - 4}" y2="104" stroke="${accent[b]}" stroke-width="2"/><text x="${(x1 + x2) / 2}" y="94" text-anchor="middle" fill="${t.dim}" font-size="11">${label}</text>`;
-  }).join("");
-  const summary = SYSTEM.nodes.map((n) => n.private ? `${n.repo}: private` : `${n.repo}: ${ciLabel(status.repos?.[n.repo])}${status.repos?.[n.repo]?.eval ? `, ${status.repos[n.repo].eval}` : ""}`).join("; ");
+  const summary = nodes.map((n) => n.private ? `${n.repo}: private` : `${n.repo}: ${ciLabel(status.repos?.[n.repo])}${status.repos?.[n.repo]?.eval ? `, ${status.repos[n.repo].eval}` : ""}`).join("; ");
   return svg({
     w: 1200, h: H,
-    title: "Live system map: sense, think, act",
-    desc: `Built from GitHub Actions and committed eval results on ${day(status.updated)}. ${summary}`,
-    style: `.flow{stroke-dasharray:6 8;animation:f 1.4s linear infinite}@keyframes f{to{stroke-dashoffset:-14}}.pulse{animation:p 2.4s ease-in-out infinite}@keyframes p{50%{opacity:.35}}`,
+    title: "Public projects status",
+    desc: `Public repositories only, snapshot ${day(status.updated)}. ${summary}`,
+    style: `.pulse{animation:p 2.4s ease-in-out infinite}@keyframes p{50%{opacity:.35}}`,
     body: `<rect class="bg" width="1200" height="${H}" fill="${t.bg}"/>
-${nodes}
-${flows}
+${body}
 <text x="1200" y="${H - 10}" text-anchor="end" fill="${t.barText}" font-size="11" font-family="${MONO}">live data · GitHub Actions + committed evals · updated ${esc(day(status.updated))}</text>`,
   });
 }
 
-export function renderLlmsTxt({ owner, status }) {
+export function renderLlmsTxt({ owner, status, nodes = SYSTEM.nodes, projects = [] }) {
+  const extra = new Map(projects.map((p) => [p.name, p]));
   const base = `https://github.com/${owner}`;
   const line = (n) => {
     if (n.private) return `- ${n.repo} (private repo, no public link or status): ${n.what}.`;
     const s = status.repos?.[n.repo] ?? {};
-    const facts = [s.ci ? `CI ${s.ci.conclusion} ${day(s.ci.at)}` : "CI no data", s.schedule && `${s.schedule.name} ${s.schedule.conclusion} ${day(s.schedule.at)}`, s.eval].filter(Boolean).join("; ");
-    return `- [${n.repo}](${base}/${n.repo}): ${n.what}. Agent entry: ${n.entry}. Status: ${facts}.`;
+    const p = extra.get(n.repo);
+    const desc = String(p?.description || n.what || "no description").replace(/\s+/g, " ").trim().replace(/[.]+$/, "");
+    const facts = [
+      p?.date ? `latest commit ${p.date.slice(0, 10)}` : null,
+      s.ci ? `${s.ci.name || "CI"} ${s.ci.conclusion} ${day(s.ci.at)}` : "CI no data",
+      s.schedule && `${s.schedule.name} ${s.schedule.conclusion} ${day(s.schedule.at)}`,
+      s.eval,
+    ].filter(Boolean).join("; ");
+    return `- [${n.repo}](${base}/${n.repo}): ${desc}. Entry: ${n.entry}. Status: ${facts}.`;
   };
   return [
     `# ${owner}`,
     "",
-    "> Agent tooling, one pipeline: sources → agent-readable knowledge → tools agents can call (CLI --json, MCP) → an assistant under human control. Every repo has an AGENTS.md.",
+    "> Public agent tools from Felix Fang: design taste linters for MapLibre and ECharts (maptaste, dashtaste), agent trace review and browser Play (ledring), and a 9-format mind-map to Markdown bridge (lakeboard-converter).",
     "",
-    `Status below comes from GitHub Actions and committed eval files, updated ${day(status.updated)}.`,
+    `Snapshot ${day(status.updated)} from the public GitHub API. CI status is recorded only from completed push runs named CI or check.`,
     "",
     "## Repos",
     "",
-    ...SYSTEM.nodes.map(line),
+    ...nodes.map(line),
     "",
     "## Optional",
     "",
-    `- [Profile README](${base}/${owner}): human-readable version with the live system map`,
-    `- [status.json](${base}/${owner}/blob/main/status.json): the same status as JSON`,
+    `- [Profile README](${base}/${owner}): human-readable profile`,
+    `- [status.json](${base}/${owner}/blob/main/status.json): the same public-repo snapshot as JSON`,
+    `- [ledring.dev](https://ledring.dev): studio home and field notes`,
     "",
   ].join("\n");
 }

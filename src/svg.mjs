@@ -68,7 +68,8 @@ const CAT_STYLE = `.cat{animation:walk 28s linear infinite}@keyframes walk{from{
 
 export function renderHero({ scene, theme, motifs = {}, data = {} }) {
   const t = THEMES[theme], a = scene.accent[theme];
-  const facts = [data.latestRepo && `last push → ${data.latestRepo}`, data.publicRepos != null && `${data.publicRepos} public repos`].filter(Boolean).join("   ·   ");
+  const push = data.latestRepo && `last push → ${data.latestRepo}${data.latestDate ? ` · ${data.latestDate}` : ""}`;
+  const facts = [push, data.publicRepos != null && `${data.publicRepos} public repos`].filter(Boolean).join("   ·   ");
   return svg({
     w: 1200, h: 360,
     title: `Felix Fang. Today's scene: ${scene.label}.`,
@@ -99,10 +100,10 @@ ${rows.map(([k, v], i) => `<text x="28" y="${120 + i * 36}" fill="${t.text}" fon
   return svg({
     w: 1200, h: 290,
     title: "Two layers: agents handle operations, the human keeps judgment",
-    desc: "Agent layer: research pipeline, workflow automations, daily digest, file conversion. Human layer: write the spec, set the seams, review against evidence, decide what ships. Specs flow down to agents, evidence flows back up.",
+    desc: "Agent layer: maptaste, dashtaste, ledring, and lakeboard-converter. Human layer: write the spec, set the seams, review against evidence, decide what ships. Specs flow down to agents, evidence flows back up.",
     style: `.flow{stroke-dasharray:6 8;animation:f 1.4s linear infinite}.up{animation-direction:reverse}@keyframes f{to{stroke-dashoffset:-14}}`,
     body: `<rect class="bg" width="1200" height="290" fill="${t.bg}"/>
-${col(0, a, "AGENT LAYER", "Handles the ops", [["research-thinking-ai", "vague topic → evidence"], ["n8n-workflow-collection", "Lark / Bitable flows"], ["tech-news-digest", "daily ranked digest"], ["lakeboard-converter", "mind maps → Markdown"]])}
+${col(0, a, "AGENT LAYER", "Handles the ops", [["maptaste", "MapLibre taste checks"], ["dashtaste", "ECharts taste checks"], ["ledring", "branch tree & Red Wall"], ["lakeboard-converter", "mind maps → Markdown"]])}
 ${col(740, h, "HUMAN LAYER", "Keeps the judgment", [["spec", "problem, stories, scope"], ["seams", "what gets tested, where"], ["review", "standards + spec, two axes"], ["decide", "what ships, what doesn’t"]])}
 <g ${FONT}><text x="600" y="92" text-anchor="middle" fill="${t.dim}" font-size="12" letter-spacing="2">HANDOFF</text>
 <line class="flow" x1="480" y1="135" x2="720" y2="135" stroke="${h}" stroke-width="2"/><text x="600" y="125" text-anchor="middle" fill="${t.text}" font-size="13">◂ spec + context</text>

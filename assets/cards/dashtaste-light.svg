@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="180" viewBox="0 0 600 180" role="img" aria-labelledby="t d" font-family="ui-sans-serif,-apple-system,'Segoe UI',Inter,Helvetica,Arial,sans-serif">
+<title id="t">02 · DASH TASTE: dashtaste</title>
+<desc id="d">38 ECharts dashboard taste rules — CLI, MCP, and Skills. $ npx dashtaste check dashboard.json --taste saas-dense ↗ dashtaste.ledring.dev</desc>
+<style>@media (prefers-reduced-motion: reduce){*{animation:none!important}}</style>
+<defs><clipPath id="card"><rect x="0.5" y="0.5" width="599" height="179" rx="10"/></clipPath></defs>
+<g clip-path="url(#card)">
+<rect width="600" height="180" fill="#ffffff"/>
+<rect width="600" height="34" fill="#eef1f5"/>
+<text x="24" y="23" font-family="ui-monospace,SFMono-Regular,'JetBrains Mono',Menlo,Consolas,monospace" font-size="13" letter-spacing="3" fill="#6e7781">02 · DASH TASTE</text>
+<text x="576" y="23" text-anchor="end" font-family="ui-monospace,SFMono-Regular,'JetBrains Mono',Menlo,Consolas,monospace" font-size="13" fill="#0969da">● LIVE</text>
+<text x="24" y="73" font-family="ui-sans-serif,-apple-system,'Segoe UI',Inter,Helvetica,Arial,sans-serif" font-size="32" font-weight="700" fill="#1f2328">dashtaste</text>
+<text x="24" y="101" font-size="18" fill="#59636e">38 ECharts dashboard taste rules — CLI, MCP, and Skills.</text>
+<rect x="24" y="112" width="552" height="30" rx="5" fill="#eef1f5" stroke="#d0d7de"/>
+<text x="36" y="132" font-family="ui-monospace,SFMono-Regular,'JetBrains Mono',Menlo,Consolas,monospace" font-size="15" fill="#1f2328">$ npx dashtaste check dashboard.json --taste saas-dense</text>
+<text x="24" y="165" font-family="ui-monospace,SFMono-Regular,'JetBrains Mono',Menlo,Consolas,monospace" font-size="14" fill="#0969da">↗ dashtaste.ledring.dev</text>
+</g>
+<rect x="0.5" y="0.5" width="599" height="179" rx="10" fill="none" stroke="#d0d7de" stroke-width="1"/>
+</svg>

@@ -1,6 +1,6 @@
 name: control-room
 on:
-  schedule: [{ cron: "5 16 * * *" }]   # just after midnight UTC+8: new scene each day
+  schedule: [{ cron: "5 0 * * *" }]   # 00:05 UTC (08:05 UTC+8): stays on the same UTC day even with Actions queue delay
   workflow_dispatch:
 permissions: { contents: write }
 jobs:
