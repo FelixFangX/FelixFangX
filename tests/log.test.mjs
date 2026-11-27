@@ -1,26 +1,26 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { renderLog, inject } from "../src/log.mjs";
+import { renderProjects, inject } from "../src/log.mjs";
 
-const c = (message, repo = "FelixFangX/a", date = "2026-10-12T03:00:00Z") => ({ repo, date, message });
+const p = (description, name = "a", date = "2026-11-10T17:24:09Z") => ({ name, repo: `FelixFangX/${name}`, description, date });
 
-test("one row per repo: latest commit's first line", () => {
-  assert.match(renderLog([c("fix: retry\n\nbody")]), /^\| 2026-10-12 \| \[a\]\(https:\/\/github.com\/FelixFangX\/a\) \| fix: retry \|$/);
+test("renders one row per project in input order with UTC commit day", () => {
+  const out = renderProjects([p("Map taste check", "maptaste"), p("Dash taste check", "dashtaste", "2026-11-03T06:42:29Z")]);
+  assert.equal(out, [
+    "| [maptaste](https://github.com/FelixFangX/maptaste) | Map taste check | 2026-11-10 |",
+    "| [dashtaste](https://github.com/FelixFangX/dashtaste) | Dash taste check | 2026-11-03 |",
+  ].join("\n"));
 });
-test("newest repo first regardless of input order", () => {
-  const out = renderLog([c("old", "u/old", "2026-01-01T00:00:00Z"), c("new", "u/new", "2026-10-01T00:00:00Z")]);
-  assert.ok(out.indexOf("new") < out.indexOf("old"));
+test("pipes and newlines in descriptions cannot break the table", () => {
+  const out = renderProjects([p("a | b\nsecond line")]);
+  assert.doesNotMatch(out, /a \| b/);
+  assert.match(out, /\| a \/ b \|/);
 });
-test("pipes in commit messages cannot break the table", () => {
-  assert.doesNotMatch(renderLog([c("a | b")]), /a \| b/);
+test("missing description or date degrades honestly to fallback text", () => {
+  const out = renderProjects([p("", "empty", "")]);
+  assert.equal(out, "| [empty](https://github.com/FelixFangX/empty) | no description | no data |");
 });
-test("emoji-prefixed bot messages are normalised, not hidden", () => {
-  assert.match(renderLog([c("📰 2026-10-12 11:26:18 自动备份")]), /\| 2026-10-12 11:26:18 自动备份 \|/);
-});
-test("respects the row limit", () => {
-  assert.equal(renderLog([c("1", "u/1"), c("2", "u/2"), c("3", "u/3")], 2).split("\n").length, 2);
-});
-test("inject touches only the marked region", () => {
-  const out = inject("A\n<!-- agent-log:start -->old<!-- agent-log:end -->\nB", "| x |");
+test("inject touches only the marked projects region", () => {
+  const out = inject("A\n<!-- projects:start -->old<!-- projects:end -->\nB", "| x |");
   assert.ok(out.startsWith("A\n") && out.endsWith("\nB") && !out.includes("old"));
 });

@@ -1,4 +1,4 @@
-<!-- Hero SVGs and the agent log regenerate daily via .github/workflows/control-room.yml -->
+<!-- Hero SVGs, status map, and the projects table regenerate daily via .github/workflows/control-room.yml -->
 
 <a href="https://github.com/FelixFangX">
 <picture>
@@ -7,63 +7,66 @@
 </picture>
 </a>
 
-<sub>The banner scene rotates daily across focus, recovery, and fun. Scene art is animated (drawing traces, equalizer, dialogue, breathing rings, a walking cat, a blinking cursor). The daily Action rewrites <code>assets/hero-light.svg</code> and <code>assets/hero-dark.svg</code>.</sub>
+<sub>The banner scene rotates daily across focus, recovery, and fun. Scene art is animated and honors <code>prefers-reduced-motion</code>. The daily Action rewrites <code>assets/hero-light.svg</code> and <code>assets/hero-dark.svg</code>.</sub>
 
 My agents run the ops. I keep the judgment.
 
 > Fast software, careful UI, open source, and an iced americano.
 
-[ledring.dev](https://ledring.dev) · [X @ColeFangX](https://x.com/ColeFangX)
+[ledring.dev](https://ledring.dev) · [Notes](https://ledring.dev/notes/) · [X @ColeFangX](https://x.com/ColeFangX)
 
 ## Products
 
-**[LEDRING / Play](https://play.ledring.dev/play/)** — Review AI builders like a game: watch the branch tree, catch instruction drift.
-
-**[maptaste](https://maptaste.ledring.dev)** — Stop agents shipping rainbow MapLibre choropleths.
+**[maptaste](https://maptaste.ledring.dev)** — Stop agents shipping rainbow MapLibre choropleths. Six named cartographic tastes, live WebGL studio, CLI, MCP, and Agent Skills. ([repo](https://github.com/FelixFangX/maptaste))
 
 ```sh
-npx maptaste check style.json --pack global
+npx maptaste check style.json --taste ink-paper
 ```
 
-**[lakeboard-converter](https://convert.ledring.dev)** — Mind maps your agents can actually read — Lakeboard/XMind → Markdown.
+**[dashtaste](https://dashtaste.ledring.dev)** — Stop agents shipping rainbow ECharts dashboards. 38 rules, six named tastes (global & CN), CLI, MCP, and Agent Skills. ([repo](https://github.com/FelixFangX/dashtaste))
+
+```sh
+npx dashtaste check dashboard.json --taste saas-dense
+```
+
+**[LEDRING / Play](https://play.ledring.dev/play/)** — Review AI builders like a game: watch the branch tree, catch instruction drift, and detect Red Wall workarounds (`npm install -g ledring@beta` for the trace CLI). ([repo](https://github.com/FelixFangX/ledring))
+
+**[lakeboard-converter](https://convert.ledring.dev)** — Mind maps your agents can actually read: 9 formats (Lakeboard, XMind, OPML, FreeMind, MindManager…) → Markdown, local-first in the browser or via MCP. ([repo](https://github.com/FelixFangX/lakeboard-converter))
 
 ```sh
 npx -y lakeboard-converter mcp
 ```
 
-<details>
-<summary>Daily diagrams</summary>
+<sub>Upstream open-source fixes merged in <a href="https://github.com/nuxt/nuxt">nuxt/nuxt</a>, <a href="https://github.com/nitrojs/nitro">nitrojs/nitro</a>, and <a href="https://github.com/ueberdosis/tiptap">ueberdosis/tiptap</a>.</sub>
 
-The Action still draws these. The map uses real GitHub Actions runs and committed eval results. The status bar is set by hand. Agents can read [`llms.txt`](./llms.txt) or [`status.json`](./status.json).
+## Public repos
+
+<sub>Rewritten daily from the public GitHub API in the order listed in <code>src/system.mjs</code>. Dates are the latest commit on each repo's default branch.</sub>
+
+<!-- projects:start -->
+| repo | description | latest commit (UTC) |
+|---|---|---|
+| [maptaste](https://github.com/FelixFangX/maptaste) | Stop agents shipping rainbow MapLibre choropleths. | 2026-11-10 |
+| [dashtaste](https://github.com/FelixFangX/dashtaste) | Stop agents shipping rainbow ECharts dashboards. | 2026-11-10 |
+| [ledring](https://github.com/FelixFangX/ledring) | Review AI builders like a game: watch the branch tree, catch instruction drift. | 2026-11-10 |
+| [lakeboard-converter](https://github.com/FelixFangX/lakeboard-converter) | Mind maps your agents can actually read — Lakeboard/XMind → Markdown. | 2026-11-10 |
+| [dev-work-grok-bot-skill](https://github.com/FelixFangX/dev-work-grok-bot-skill) | Turn a Grok Bot into a safe work assistant for your product. | 2026-11-10 |
+| [ledring.dev](https://github.com/FelixFangX/ledring.dev) | ledring.dev — status lights for AI agents + Play. | 2026-11-03 |
+<!-- projects:end -->
+
+<details>
+<summary>How the work is split &amp; live status</summary>
+
+The Action draws these from public GitHub Actions runs and committed eval files. Missing data renders as "no data". Agents can read [`llms.txt`](./llms.txt) or [`status.json`](./status.json).
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/layers-dark.svg">
-  <img alt="Two layers. Agents handle the repetitive repos. I keep spec, review, and what ships." src="./assets/layers-light.svg" width="100%">
+  <img alt="Two layers. Public tools on one side. Spec, review, and what ships on the other." src="./assets/layers-light.svg" width="100%">
 </picture>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/system-map-dark.svg">
-  <img alt="System map from GitHub Actions and committed evals. A failing run shows as failing. Private repos show no status." src="./assets/system-map-light.svg" width="100%">
-</picture>
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/status-dark.svg">
-  <img alt="Become Human plan status, set by hand. Stages: Spec, Slices, Tests, Release." src="./assets/status-light.svg" width="100%">
+  <img alt="Live status map from GitHub Actions and committed evals for curated public repos." src="./assets/system-map-light.svg" width="100%">
 </picture>
 
 </details>
-
-## Agent log
-
-<sub>Pulled from my public GitHub activity by a daily Action. Real events only.</sub>
-
-<!-- agent-log:start -->
-| date&nbsp;(UTC) | repo | latest commit |
-|---|---|---|
-| 2026-11-10 | [maptaste](https://github.com/FelixFangX/maptaste) | Merge pull request #7 from FelixFangX/feature/release-0-0-2-c8f6 |
-| 2026-11-10 | [lakeboard-converter](https://github.com/FelixFangX/lakeboard-converter) | Merge pull request #33 from FelixFangX/feature/release-0-6-0-6b77 |
-| 2026-11-10 | [n8n-workflow-collection](https://github.com/FelixFangX/n8n-workflow-collection) | Merge pull request #1 from FelixFangX/feature/import-preflight-aff8 |
-| 2026-11-10 | [dev-work-grok-bot-skill](https://github.com/FelixFangX/dev-work-grok-bot-skill) | Merge pull request #27 from FelixFangX/feature/exact-approval-fixtures-0 |
-| 2026-11-10 | [dashtaste](https://github.com/FelixFangX/dashtaste) | Merge pull request #7 from FelixFangX/feature/rules-taste-pack-bb1c |
-| 2026-11-10 | [ledring](https://github.com/FelixFangX/ledring) | Merge pull request #110 from FelixFangX/feature/evidence-review-0c5b |
-<!-- agent-log:end -->

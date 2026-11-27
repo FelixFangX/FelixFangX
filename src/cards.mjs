@@ -3,12 +3,12 @@ import { THEMES, FONT, MONO } from "./theme.mjs";
 import { svg, esc } from "./svg.mjs";
 
 const cards = [
-  { id: "convert", label: "01 · CONVERT", title: "convert.ledring.dev", lines: ["Drop an XMind or Yuque Lakeboard mind map, get Markdown.", "Runs in the browser. Nothing is uploaded."], foot: "↗ convert.ledring.dev" },
-  { id: "npm", label: "02 · CLI + MCP", title: "lakeboard-converter", lines: ["The same converter as a CLI and a read-only MCP server."], command: "$ npx -y lakeboard-converter mcp", foot: "↗ npm" },
-  { id: "research", label: "03 · RESEARCH", title: "research.ledring.dev", lines: ["Turns a vague research interest into directions", "backed by OpenAlex evidence."], foot: "↗ research.ledring.dev" },
-  { id: "play", label: "04 · GAME", title: "LEDRING Play", lines: ["Watch an AI builder make a web page", "and decide what gets through."], foot: "↗ play.ledring.dev" },
-  { id: "source", label: "05 · SOURCE", title: "FelixFangX/ledring", lines: ["The game and the toolkit behind it:", "agent traces as branch trees, drift scores."], foot: "↗ github.com/FelixFangX/ledring" },
-  { id: "site", label: "06 · SITE", title: "ledring.dev", lines: ["My site, in English and Chinese (Simplified)."], foot: "↗ ledring.dev" },
+  { id: "maptaste", label: "01 · MAP TASTE", title: "maptaste", lines: ["Named MapLibre cartographic plates — CLI, MCP, and Skills."], command: "$ npx maptaste check style.json --taste ink-paper", foot: "↗ maptaste.ledring.dev" },
+  { id: "dashtaste", label: "02 · DASH TASTE", title: "dashtaste", lines: ["38 ECharts dashboard taste rules — CLI, MCP, and Skills."], command: "$ npx dashtaste check dashboard.json --taste saas-dense", foot: "↗ dashtaste.ledring.dev" },
+  { id: "play", label: "03 · GAME", title: "LEDRING Play", lines: ["Watch an AI builder make a web page", "and decide what gets through."], foot: "↗ play.ledring.dev" },
+  { id: "source", label: "04 · SOURCE", title: "FelixFangX/ledring", lines: ["The game and the toolkit behind it:", "agent traces as branch trees, drift scores, Red Wall."], foot: "↗ github.com/FelixFangX/ledring" },
+  { id: "convert", label: "05 · CONVERT", title: "convert.ledring.dev", lines: ["9 mind-map formats → Markdown, local-first in browser or MCP."], command: "$ npx -y lakeboard-converter mcp", foot: "↗ convert.ledring.dev" },
+  { id: "site", label: "06 · STUDIO", title: "ledring.dev", lines: ["Studio home, field notes, and interactive tools", "in English and Chinese (Simplified)."], foot: "↗ ledring.dev" },
 ];
 
 function renderCard(card, theme) {
