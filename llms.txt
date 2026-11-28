@@ -2,14 +2,14 @@
 
 > Public agent tools from Felix Fang: design taste linters for MapLibre and ECharts (maptaste, dashtaste), agent trace review and browser Play (ledring), and a 9-format mind-map to Markdown bridge (lakeboard-converter).
 
-Snapshot 2026-11-27 from the public GitHub API. CI status is recorded only from completed push runs named CI or check.
+Snapshot 2026-11-28 from the public GitHub API. CI status is recorded only from completed push runs named CI or check.
 
 ## Repos
 
 - [maptaste](https://github.com/FelixFangX/maptaste): Stop agents shipping rainbow MapLibre choropleths. Entry: npx maptaste check style.json --taste ink-paper. Status: latest commit 2026-11-10; check success 2026-11-10.
 - [dashtaste](https://github.com/FelixFangX/dashtaste): Stop agents shipping rainbow ECharts dashboards. Entry: npx dashtaste check dashboard.json --taste saas-dense. Status: latest commit 2026-11-10; CI success 2026-11-10.
 - [ledring](https://github.com/FelixFangX/ledring): Review AI builders like a game: watch the branch tree, catch instruction drift. Entry: play.ledring.dev/play/ · npm i -g ledring@beta. Status: latest commit 2026-11-10; CI success 2026-11-10.
-- [lakeboard-converter](https://github.com/FelixFangX/lakeboard-converter): Mind maps your agents can actually read — Lakeboard/XMind → Markdown. Entry: convert.ledring.dev · npx -y lakeboard-converter mcp. Status: latest commit 2026-11-10; CI success 2026-11-10.
+- [lakeboard-converter](https://github.com/FelixFangX/lakeboard-converter): Universal mind maps your agents can actually read — 9 formats (XMind, OPML, FreeMind, MindManager, Lakeboard…) → Markdown (Web, CLI, MCP). Entry: convert.ledring.dev · npx -y lakeboard-converter mcp. Status: latest commit 2026-11-10; CI success 2026-11-10.
 - [dev-work-grok-bot-skill](https://github.com/FelixFangX/dev-work-grok-bot-skill): Turn a Grok Bot into a safe work assistant for your product. Entry: skills/dev-work-bot-setup/SKILL.md · skill-eval. Status: latest commit 2026-11-10; CI success 2026-11-10; rule strings 42/42 (file check).
 - [ledring.dev](https://github.com/FelixFangX/ledring.dev): ledring.dev — status lights for AI agents + Play. Entry: https://ledring.dev. Status: latest commit 2026-11-03; CI no data.
 

@@ -49,7 +49,7 @@ npx -y lakeboard-converter mcp
 | [maptaste](https://github.com/FelixFangX/maptaste) | Stop agents shipping rainbow MapLibre choropleths. | 2026-11-10 |
 | [dashtaste](https://github.com/FelixFangX/dashtaste) | Stop agents shipping rainbow ECharts dashboards. | 2026-11-10 |
 | [ledring](https://github.com/FelixFangX/ledring) | Review AI builders like a game: watch the branch tree, catch instruction drift. | 2026-11-10 |
-| [lakeboard-converter](https://github.com/FelixFangX/lakeboard-converter) | Mind maps your agents can actually read — Lakeboard/XMind → Markdown. | 2026-11-10 |
+| [lakeboard-converter](https://github.com/FelixFangX/lakeboard-converter) | Universal mind maps your agents can actually read — 9 formats (XMind, OPML, FreeMind, MindManager, Lakeboard…) → Markdown (Web, CLI, MCP). | 2026-11-10 |
 | [dev-work-grok-bot-skill](https://github.com/FelixFangX/dev-work-grok-bot-skill) | Turn a Grok Bot into a safe work assistant for your product. | 2026-11-10 |
 | [ledring.dev](https://github.com/FelixFangX/ledring.dev) | ledring.dev — status lights for AI agents + Play. | 2026-11-03 |
 <!-- projects:end -->
